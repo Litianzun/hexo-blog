@@ -664,10 +664,10 @@ server &#123;
 <p>之后每次要更新前端项目的话，<code>cd /xxx</code>进入对应的资源文件夹，执行<code>mdelete *</code>，删除原来所有的包，然后再执行<code>lcd /xx</code>进入你本地的项目文件夹，执行<code>mput *</code>批量上传文件</p>
 <p><em>tip: nginx的坑很多，零基础搞这东西就和盲人摸象一样，差点没把我搞死。。</em><br>下面列举一些我个人常用的命令：</p>
 <ul>
-<li>nginx重启：nginx -s reload</li>
-<li>列举当前开放的服务：netstat -ntlp</li>
-<li>启动nginx：nginx -c /etc/nginx/nginx.conf<br>上传资源的时候，如果是文件夹，会提示权限不够：</li>
-<li>开权限：chown -R ftpuser:ftpuser /var/ftp/test</li>
+<li>nginx重启：<code>nginx -s reload</code></li>
+<li>列举当前开放的服务：<code>netstat -ntlp</code></li>
+<li>启动nginx：<code>nginx -c /etc/nginx/nginx.conf</code><br>上传资源的时候，如果是文件夹，会提示权限不够：</li>
+<li>开权限：<code>chown -R ftpuser:ftpuser /var/ftp/test</code>(后面的路径换为文件夹的地址)</li>
 </ul>
 
             </div>
