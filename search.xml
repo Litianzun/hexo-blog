@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>前端常用单位介绍</title>
+      <link href="2020/11/20/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%8D%95%E4%BD%8D%E4%BB%8B%E7%BB%8D/"/>
+      <url>2020/11/20/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%8D%95%E4%BD%8D%E4%BB%8B%E7%BB%8D/</url>
+      
+        <content type="html"><![CDATA[<p>本文记录一下前端的常用单位，分别为：px、em、rem、vw(vh)</p><h3 id="px"><a href="#px" class="headerlink" title="px"></a>px</h3><p>px是大家最耳熟能详的，也叫像素，很多人可能以为它是一个绝对单位，实际上它是一个相对单位，相对于屏幕分辨率而言<br>简单来说，分辨率和屏幕尺寸没有什么关系，作为一个前端来说，需要将注意力更多放在分辨率上，因为1px在分辨率不同的电脑上，显示的大小是不同的；<br>常用分辨率：</p><ul><li>720p：1280*720，高清（HD）</li><li>1080p：1920*1080，超清</li><li>1440p：2560*1440，2k（QHD）</li><li>2160p：3840*2160，4k（一般显示器极限）</li><li>4320p：7680*4320，8k</li></ul><p><strong><em>分辨率越大，1px实际尺寸越小，屏幕越清晰</em></strong><br>很简单的道理，相同尺寸的屏幕比如500mm，一个720p，一个1080p；那么1个像素点的尺寸=500/1280=0.39mm，500/1920=0.26mm；所以分辨率越高，1px越小；<br>而且由这个计算公式可知：尺寸越大，像素点也越大，画面反而不精细了，这就和我们看微信头像，缩略图看着好清晰，放大之后看模糊的一塌糊涂，就是这个道理。所以买显示器不要过分的追求“大”～（扯远了嗷）</p><h3 id="em"><a href="#em" class="headerlink" title="em"></a>em</h3><p>em是相对单位，相对的是当前对象的文字尺寸，如果文字尺寸未设置，则以浏览器默认字体为准（16px）<br>一般来说，用em的话，会在body选择器中指定一下font-size，统一一下1em的大小<br>另外em有个坑需要注意，它会继承父级元素字体的大小，所以如果父级元素指定了大小，那么子元素的大小需要重新计算一下再指定</p><h3 id="rem"><a href="#rem" class="headerlink" title="rem"></a>rem</h3><p>rem为css3新增的一个单位，也是相对单位，区别于em，它只相对于html根元素，避免了em的父级元素继承特点，所以用rem无后顾之忧，你只需管理根元素的字体大小即可<br><em>注意：只兼容IE8+</em></p><h3 id="vw-vh"><a href="#vw-vh" class="headerlink" title="vw/vh"></a>vw/vh</h3><p>vw,vh也是css3新增的单位，也是相对单位，相对的是视窗的大小，100vw等于视窗宽度，100vh等于视窗高度；<br><em>注意：只兼容IE8+</em></p><blockquote><p>具体用哪种单位？<br>根据项目性质决定，web一般使用px，h5一般使用rem，小程序有自己的单位，app不晓得啦，以前我做react-native的时候也是有rn自带的单位</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 单位 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ES6 Set Map</title>
       <link href="2020/10/21/ES6-Set-Map/"/>
       <url>2020/10/21/ES6-Set-Map/</url>
