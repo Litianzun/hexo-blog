@@ -1,0 +1,8 @@
+User-agent: * Allow: /
+Allow: /archives/
+Disallow: /vendors/
+Disallow: /categories/
+
+
+Sitemap: http://www.ldpro.top/sitemap.xml
+Sitemap: http://www.ldpro.top/baidusitemap.xml
