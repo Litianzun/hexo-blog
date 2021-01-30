@@ -143,7 +143,7 @@
       <link href="2020/09/21/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D/"/>
       <url>2020/09/21/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D/</url>
       
-        <content type="html"><![CDATA[<p>hexo搭建的一个博客，部署在自己的服务器上，接下来可能会买一个域名</p><p>搭博客的目的不为别的，就是闲的。没事的时候我会在上面写一些文章，可能是生活上的琐事，或者是一些技术类文章，或者一些音乐，电影，美剧啥的，甚至可能是一些天马行空的想法。。</p><p>其实很早就有搞一个博客的想法了，程序员也不是非得搞什么技术博客，博客首先就是一个记录分享的平台，也是自己的一个小家。在中国如今人人都是社畜的时代，与其拼搏一辈子为了一个火柴盒，倒不如把自己这个虚拟的小家好好修缮一下，也算是一种心灵的寄托～，嗯–自己把自己都说动了&gt;&lt;</p><p>总之，更新随缘，大家也就看看图一乐吧</p>]]></content>
+        <content type="html"><![CDATA[<p>hexo搭建的一个博客，部署在自己的服务器上，接下来可能会买一个域名</p><p>搭博客的目的不为别的，就是闲的。没事的时候我会在上面写一些文章，可能是生活上的琐事，或者是一些技术类文章，或者一些音乐，电影，美剧啥的，甚至可能是一些天马行空的想法。。</p><p>其实很早就有搞一个博客的想法了，程序员也不是非得搞什么技术博客，博客首先就是一个记录分享的平台，也是自己的一个小家。在如今人人都是社畜的时代，与其拼搏一辈子为了一个火柴盒，倒不如把自己这个虚拟的小家好好修缮一下，也算是一种心灵的寄托～，嗯–自己把自己都说动了&gt;&lt;</p><p>总之，更新随缘，大家也就看看图一乐吧</p>]]></content>
       
       
       <categories>
@@ -156,33 +156,6 @@
         <tags>
             
             <tag> 博客 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>markdown基本语法介绍</title>
-      <link href="2020/09/18/markdown%E4%BB%8B%E7%BB%8D/"/>
-      <url>2020/09/18/markdown%E4%BB%8B%E7%BB%8D/</url>
-      
-        <content type="html"><![CDATA[<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><hr><p>这里是一大段文字，主要是文章的主内容<br>普通换行是两个空格+回车;</p><p>直接回车也能换行<br><em>斜体</em> <strong>粗体</strong> <strong><em>又粗又斜</em></strong></p><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>无序列表</p><ul><li>第一项</li><li>第二项</li><li>第三项</li></ul><p>有序列表</p><ol><li>第一项</li><li>第二项</li><li>第三项</li></ol><p>列表嵌套</p><ol><li>i<ul><li>三到四个空格</li><li>三到四个空格</li></ul></li><li>ii<ul><li>四个空格</li><li>四个空格</li></ul></li></ol><h3 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h3><p>区块把它想象成一个带样式的div标签吧，列表可以放区块里，区块也能放列表里，体现在html上是”blockquote”块引用标签</p><blockquote><p>区块来了</p></blockquote><blockquote><p>大<br>区<br>块</p></blockquote><blockquote><p>区块套娃</p><blockquote><p>1</p><blockquote><p>2</p></blockquote></blockquote></blockquote><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p><code>printf()</code>函数</p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>图片就直接用img标签吧，还可以调大小<br><img src="http://static.runoob.com/images/runoob-logo.png" width="50%"></p><p>在这里贴个自己项目的链接：<a href="http://175.24.123.231:8081/">网易云音乐</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> markdown </tag>
-            
-            <tag> 写作 </tag>
             
         </tags>
       
