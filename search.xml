@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>dockerの小试牛刀</title>
+      <link href="2021/10/15/docker%E3%81%AE%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80/"/>
+      <url>2021/10/15/docker%E3%81%AE%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80/</url>
+      
+        <content type="html"><![CDATA[<p>docker现在作为最热门的部署技术之一，作为一个前端也是有必要学习哒!<br>enmmmmm，不过作为一个前端，加上公司也很少用docker，接触的机会实在太少了，根本没有实操机会啊喂，这两天盲人摸🐘般的搞了点皮毛，写下一点点心得：</p><h3 id="什么是docker"><a href="#什么是docker" class="headerlink" title="什么是docker"></a>什么是docker</h3><p>一套开源的、可以搭建虚拟环境的应用容器引擎。特点是隔离化、容器化。</p><h3 id="docker是干啥用的"><a href="#docker是干啥用的" class="headerlink" title="docker是干啥用的"></a>docker是干啥用的</h3><p>通过docker，可以把本地的运行环境移植到一个镜像中，在服务器端就可以直接用上这套环境来进行部署，省去了不同环境之间的转换和不兼容。<br>所以，从作用上来看，似乎和虚拟机有点像。</p><h3 id="docker的优点"><a href="#docker的优点" class="headerlink" title="docker的优点"></a>docker的优点</h3><p>比虚拟机而言，docker启动迅速，开箱即用；内存占用少</p><h3 id="docker的安装"><a href="#docker的安装" class="headerlink" title="docker的安装"></a>docker的安装</h3><p>安装方法网上一搜一大堆，我的电脑是macOS系统，可以直接用homebrew安装，或者也可以手动去官网下载安装包</p><h3 id="docker的核心概念"><a href="#docker的核心概念" class="headerlink" title="docker的核心概念"></a>docker的核心概念</h3><ol><li>镜像<br>镜像是docker的地基，docker官方也有专门的镜像库，提供容器运行时所需的运行环境；<br>相关命令：<br> <strong><em>列出本地镜像列表</em></strong> <code>docker images</code><br> <strong><em>获取镜像</em></strong> <code>docker pull xxx</code><br> <strong><em>查找镜像</em></strong> <code>docker search xxx</code><br> <strong><em>删除镜像</em></strong> <code>docker rmi xxx</code><br> <strong><em>更新/提交镜像</em></strong> <code>docker commit -m=? -a=? 容器id xxx</code></li><li>容器<br>容器是镜像的实例，只有把镜像容器化了才可以在本地使用；<br>相关命令：(xxx代表镜像名)<br> <strong><em>查看运行中容器</em></strong> <code>docker ps</code><br> <strong><em>创建容器</em></strong> <code>docker run [OPTIONS] xxx [COMMAND] </code><br> OPTIONS说明：<br> -d 后台运行容器<br> -i 交互模式运行<br> -t 为容器分配一个伪输入终端<br> -p 指定端口映射，格式<code>主机端口:容器端口</code><br> -P 随机端口映射<br> –name 为容器指定名称<br> -v 绑定卷，一般用于数据传输<br> 上面都是常用的参数，不常用的就不列举了，可以找文档看；此外，-d,-t,-i可以合并写，比如-it,-itd<br>举例：<br>使用docker镜像nginx:latest以后台模式启动一个容器,并将容器命名为mynginx<br><code>docker run -d --name mynginx -d nginx:latest</code><br>使用镜像 nginx:latest，以后台模式启动一个容器,将容器的 80 端口映射到主机的 80 端口,主机的目录 /data 映射到容器的 /data。<br><code>docker run -d -p 80:80 -v /data:/data nginx:latest</code></li></ol><p>此外，容器和容器之间也可以进行互联，方法是先建立一个docker网络<br><code>docker network create -d bridge test-net</code><br>之后创建两个或多个容器，用–network test-net来加入该网络</p><ol start="3"><li>仓库<br>仓库是集中存放镜像的地方，官方有<a href="https://hub.docker.com/">Docker Hub</a></li></ol><p>那么身为一个前端，部署方面最先要接触的必须是nginx，接下来就以nginx的部署为例</p><p>拉取nginx镜像：<br><code>docker pull nginx:latest</code></p><p>运行一个nginx容器：<br><code>docker run --name nginx-test -p 80:80 -d nginx</code></p><p>运行完后看本地ip能否访问,如成功应该出现’Welcome to nginx!’页面(这里我用的8081端口，因为80端口被占用了)<br><img src="http://cdn.ldpro.top/docker-nginx.jpg" width="80%"></p><p>之后我们进入该容器<br><code>docker exec -it 容器id bash</code></p><p>nginx容器的默认nginx存放地址为/usr/share/nginx/html/index.html，理论上我们直接把前端包放进去就ok了。<br>但是如何把本机文件拷贝到容器里呢？</p><p>两种方法：</p><ol><li><p>通过映射：<br><code>docker run --name nginx-blog -p 80:80 -d -v /Users/lidong/Documents/blog/public:/usr/share/nginx/html nginx:latest</code><br>这里我是直接把本机的前端包映射到容器对应的nginx目录,简单粗暴。</p></li><li><p>进一步配置，通过dockerfile<br>Dockerfile是docker的一个统一配置文件，类似于nginx的nginx.conf，用来配置一个自定义的镜像.<br>我们在本地创建一个Dockerfile文件夹，里面有一个Dockerfile文件.<br><code>mkdir Dockerfile</code>  <code>touch Dockerfile</code><br>然后在/Dockerfile/创建web文件夹，在/Dockerfile/web/创建front文件夹，然后把前端dist拖到/Dockerfile/web/front/。</p></li></ol><p>编辑Dockerfile:</p><pre class="line-numbers language-none"><code class="language-none">FROM nginx:latestCOPY &#x2F;web&#x2F;front&#x2F;dist &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>这两条指令的意思是我们自定义的这个镜像，基于nginx:latest，然后复制本地/web/front/dist文件到容器/usr/share/nginx/html目录</p><p>关于Dockerfile的指令，可参照这篇文章：<a href="https://www.runoob.com/docker/docker-dockerfile.html">https://www.runoob.com/docker/docker-dockerfile.html</a></p><p>之后进入Dockerfile文件夹，开始构建镜像:<br><code>docker build -t web-front:latest .</code> //创建一个名称标签为web-front:latest的镜像</p><p>输入docker images查看镜像<br><img src="http://cdn.ldpro.top/docker-nginx2.jpg" width="80%"></p><p>运行容器<br><code>docker run -itd --name web-front-1 -p 80:80 web-front bash</code></p><p>进入容器<br><code>docker exec -it 容器id bash</code></p><p>运行<code>/usr/sbin/nginx</code>开启nginx服务</p><p>好了，可以访问了~<br><img src="http://cdn.ldpro.top/docker-nginx3.jpg" width="100%"></p><p><em>参考文章：</em></p><ul><li><a href="https://juejin.cn/post/6844904022659301383#heading-9">https://juejin.cn/post/6844904022659301383#heading-9</a></li><li><a href="https://juejin.cn/post/6844903591375814669">https://juejin.cn/post/6844903591375814669</a></li><li><a href="https://www.cnblogs.com/saneri/p/11799865.html">https://www.cnblogs.com/saneri/p/11799865.html</a></li><li><a href="https://www.runoob.com/docker/docker-tutorial.html">https://www.runoob.com/docker/docker-tutorial.html</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于防抖、节流</title>
       <link href="2021/05/31/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/"/>
       <url>2021/05/31/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/</url>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="关于防抖、节流, Lister">
+    <meta name="keywords" content="dockerの小试牛刀, Lister">
     <meta name="description" content="随遇而安，随心而动">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>关于防抖、节流 | Lister</title>
+    <title>dockerの小试牛刀 | Lister</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -330,12 +330,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('http://cdn.ldpro.top/cover/c5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://cdn.ldpro.top/cover/docker.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">关于防抖、节流</h1>
+                    <h1 class="description center-align post-title">dockerの小试牛刀</h1>
                 </div>
             </div>
         </div>
@@ -452,8 +452,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
-                                <span class="chip bg-color">性能优化</span>
+                            <a href="/tags/docker/">
+                                <span class="chip bg-color">docker</span>
                             </a>
                         
                     </div>
@@ -477,7 +477,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-31
+                    2021-10-15
                 </div>
                 
 
@@ -486,14 +486,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    623
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -508,114 +508,50 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>防抖，节流是前端业务中经常用到的一种优化手段，能极大的节省内存开销和前后端交互次数<br>我本人防抖用过几次，节流倒是没接触过，于是特地研究了一下，发现这两者其实大同小异；</p>
-<p>防抖就是设定一个延迟，在这个延迟时间内如果多次调用，只执行最后一次调用<br>节流就是设定一个最大时间，在这个时间内管你调用多少次，也只会调用一次</p>
-<p>所以这两个本质上没区别，都是为了在多次快速频繁调用时，只调用一次。<br>不过一个是取最后一次调用，一个是取第一次调用的结果（反正我个人理解是这样😂）</p>
-<p>正常业务中，为了适应快速开发，防抖和节流不用自己写，一般用lodash的 <strong><em>debounce</em></strong> 和 <strong><em>throttle</em></strong></p>
-<p>自己手写的话，可以参考如下代码：</p>
-<h3 id="防抖"><a href="#防抖" class="headerlink" title="防抖"></a>防抖</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> useState <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">var</span> init1 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> timer1 <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment">//初始化timer，作为计时清除依据</span>
-
-<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>view1<span class="token punctuation">,</span> setView1<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">function</span> <span class="token function">handleClick1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token function">debounce</span><span class="token punctuation">(</span>
-      <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        init1<span class="token operator">++</span><span class="token punctuation">;</span>
-        <span class="token function">setView1</span><span class="token punctuation">(</span>init1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-      <span class="token number">1000</span><span class="token punctuation">,</span>
-      <span class="token boolean">false</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">res</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div<span class="token operator">></span>
-      <span class="token operator">&lt;</span>h2<span class="token operator">></span>防抖<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
-      <span class="token operator">&lt;</span>button id<span class="token operator">=</span><span class="token string">"btn"</span> onClick<span class="token operator">=</span><span class="token punctuation">&#123;</span>handleClick1<span class="token punctuation">&#125;</span><span class="token operator">></span>
-        click
-      <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-      <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"display"</span> style<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span> height<span class="token operator">:</span> <span class="token number">100</span> <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token operator">></span>
-        <span class="token punctuation">&#123;</span>view1<span class="token punctuation">&#125;</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token comment">/**
- * 防反跳。fn函数在最后一次调用时刻的delay毫秒之后执行！
- * @param fn 执行函数
- * @param delay 时间间隔
- * @param isImmediate 为true，debounce会在delay时间间隔的开始时立即调用这个函数
- * @returns &#123;Function&#125;
- */</span>
-<span class="token keyword">function</span> <span class="token function">debounce</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay<span class="token punctuation">,</span> isImmediate</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"执行"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">var</span> context <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span> <span class="token comment">//获取函数所在作用域this</span>
-    <span class="token keyword">var</span> args <span class="token operator">=</span> arguments<span class="token punctuation">;</span> <span class="token comment">//取得传入参数</span>
-    <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>isImmediate <span class="token operator">&amp;&amp;</span> timer1 <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-      <span class="token comment">//时间间隔外立即执行</span>
-      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      timer1 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-      <span class="token keyword">return</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    timer1 <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      timer1 <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="节流"><a href="#节流" class="headerlink" title="节流"></a>节流</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> useState <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">var</span> init2 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> timer2 <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> timeStamp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>view2<span class="token punctuation">,</span> setView2<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">function</span> <span class="token function">handleClick2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-      init2<span class="token operator">++</span><span class="token punctuation">;</span>
-      <span class="token function">setView2</span><span class="token punctuation">(</span>init2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">res</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div<span class="token operator">></span>
-      <span class="token operator">&lt;</span>h2<span class="token operator">></span>节流<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
-      <span class="token operator">&lt;</span>button id<span class="token operator">=</span><span class="token string">"btn"</span> onClick<span class="token operator">=</span><span class="token punctuation">&#123;</span>handleClick2<span class="token punctuation">&#125;</span><span class="token operator">></span>
-        click
-      <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-      <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"display"</span> style<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span> height<span class="token operator">:</span> <span class="token number">100</span> <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token operator">></span>
-        <span class="token punctuation">&#123;</span>view2<span class="token punctuation">&#125;</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">var</span> context <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span> <span class="token comment">//获取函数所在作用域this</span>
-    <span class="token keyword">var</span> args <span class="token operator">=</span> arguments<span class="token punctuation">;</span> <span class="token comment">//取得传入参数</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> timeStamp <span class="token operator">></span> delay<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-      timeStamp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      timer2 <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>效果可查看该视频：<br><video controls width='100%' src='http://cdn.ldpro.top/fd-screen.mov' /></p>
+                <p>docker现在作为最热门的部署技术之一，作为一个前端也是有必要学习哒!<br>enmmmmm，不过作为一个前端，加上公司也很少用docker，接触的机会实在太少了，根本没有实操机会啊喂，这两天盲人摸🐘般的搞了点皮毛，写下一点点心得：</p>
+<h3 id="什么是docker"><a href="#什么是docker" class="headerlink" title="什么是docker"></a>什么是docker</h3><p>一套开源的、可以搭建虚拟环境的应用容器引擎。特点是隔离化、容器化。</p>
+<h3 id="docker是干啥用的"><a href="#docker是干啥用的" class="headerlink" title="docker是干啥用的"></a>docker是干啥用的</h3><p>通过docker，可以把本地的运行环境移植到一个镜像中，在服务器端就可以直接用上这套环境来进行部署，省去了不同环境之间的转换和不兼容。<br>所以，从作用上来看，似乎和虚拟机有点像。</p>
+<h3 id="docker的优点"><a href="#docker的优点" class="headerlink" title="docker的优点"></a>docker的优点</h3><p>比虚拟机而言，docker启动迅速，开箱即用；内存占用少</p>
+<h3 id="docker的安装"><a href="#docker的安装" class="headerlink" title="docker的安装"></a>docker的安装</h3><p>安装方法网上一搜一大堆，我的电脑是macOS系统，可以直接用homebrew安装，或者也可以手动去官网下载安装包</p>
+<h3 id="docker的核心概念"><a href="#docker的核心概念" class="headerlink" title="docker的核心概念"></a>docker的核心概念</h3><ol>
+<li>镜像<br>镜像是docker的地基，docker官方也有专门的镜像库，提供容器运行时所需的运行环境；<br>相关命令：<br> <strong><em>列出本地镜像列表</em></strong> <code>docker images</code><br> <strong><em>获取镜像</em></strong> <code>docker pull xxx</code><br> <strong><em>查找镜像</em></strong> <code>docker search xxx</code><br> <strong><em>删除镜像</em></strong> <code>docker rmi xxx</code><br> <strong><em>更新/提交镜像</em></strong> <code>docker commit -m=? -a=? 容器id xxx</code></li>
+<li>容器<br>容器是镜像的实例，只有把镜像容器化了才可以在本地使用；<br>相关命令：(xxx代表镜像名)<br> <strong><em>查看运行中容器</em></strong> <code>docker ps</code><br> <strong><em>创建容器</em></strong> <code>docker run [OPTIONS] xxx [COMMAND] </code><br> OPTIONS说明：<br> -d 后台运行容器<br> -i 交互模式运行<br> -t 为容器分配一个伪输入终端<br> -p 指定端口映射，格式<code>主机端口:容器端口</code><br> -P 随机端口映射<br> –name 为容器指定名称<br> -v 绑定卷，一般用于数据传输<br> 上面都是常用的参数，不常用的就不列举了，可以找文档看；此外，-d,-t,-i可以合并写，比如-it,-itd<br>举例：<br>使用docker镜像nginx:latest以后台模式启动一个容器,并将容器命名为mynginx<br><code>docker run -d --name mynginx -d nginx:latest</code><br>使用镜像 nginx:latest，以后台模式启动一个容器,将容器的 80 端口映射到主机的 80 端口,主机的目录 /data 映射到容器的 /data。<br><code>docker run -d -p 80:80 -v /data:/data nginx:latest</code></li>
+</ol>
+<p>此外，容器和容器之间也可以进行互联，方法是先建立一个docker网络<br><code>docker network create -d bridge test-net</code><br>之后创建两个或多个容器，用–network test-net来加入该网络</p>
+<ol start="3">
+<li>仓库<br>仓库是集中存放镜像的地方，官方有<a target="_blank" rel="noopener" href="https://hub.docker.com/">Docker Hub</a></li>
+</ol>
+<p>那么身为一个前端，部署方面最先要接触的必须是nginx，接下来就以nginx的部署为例</p>
+<p>拉取nginx镜像：<br><code>docker pull nginx:latest</code></p>
+<p>运行一个nginx容器：<br><code>docker run --name nginx-test -p 80:80 -d nginx</code></p>
+<p>运行完后看本地ip能否访问,如成功应该出现’Welcome to nginx!’页面(这里我用的8081端口，因为80端口被占用了)<br><img src="http://cdn.ldpro.top/docker-nginx.jpg" width="80%"></p>
+<p>之后我们进入该容器<br><code>docker exec -it 容器id bash</code></p>
+<p>nginx容器的默认nginx存放地址为/usr/share/nginx/html/index.html，理论上我们直接把前端包放进去就ok了。<br>但是如何把本机文件拷贝到容器里呢？</p>
+<p>两种方法：</p>
+<ol>
+<li><p>通过映射：<br><code>docker run --name nginx-blog -p 80:80 -d -v /Users/lidong/Documents/blog/public:/usr/share/nginx/html nginx:latest</code><br>这里我是直接把本机的前端包映射到容器对应的nginx目录,简单粗暴。</p>
+</li>
+<li><p>进一步配置，通过dockerfile<br>Dockerfile是docker的一个统一配置文件，类似于nginx的nginx.conf，用来配置一个自定义的镜像.<br>我们在本地创建一个Dockerfile文件夹，里面有一个Dockerfile文件.<br><code>mkdir Dockerfile</code>  <code>touch Dockerfile</code><br>然后在/Dockerfile/创建web文件夹，在/Dockerfile/web/创建front文件夹，然后把前端dist拖到/Dockerfile/web/front/。</p>
+</li>
+</ol>
+<p>编辑Dockerfile:</p>
+<pre class="line-numbers language-none"><code class="language-none">FROM nginx:latest
+COPY &#x2F;web&#x2F;front&#x2F;dist &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>这两条指令的意思是我们自定义的这个镜像，基于nginx:latest，然后复制本地/web/front/dist文件到容器/usr/share/nginx/html目录</p>
+<p>关于Dockerfile的指令，可参照这篇文章：<a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-dockerfile.html">https://www.runoob.com/docker/docker-dockerfile.html</a></p>
+<p>之后进入Dockerfile文件夹，开始构建镜像:<br><code>docker build -t web-front:latest .</code> //创建一个名称标签为web-front:latest的镜像</p>
+<p>输入docker images查看镜像<br><img src="http://cdn.ldpro.top/docker-nginx2.jpg" width="80%"></p>
+<p>运行容器<br><code>docker run -itd --name web-front-1 -p 80:80 web-front bash</code></p>
+<p>进入容器<br><code>docker exec -it 容器id bash</code></p>
+<p>运行<code>/usr/sbin/nginx</code>开启nginx服务</p>
+<p>好了，可以访问了~<br><img src="http://cdn.ldpro.top/docker-nginx3.jpg" width="100%"></p>
+<p><em>参考文章：</em></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904022659301383#heading-9">https://juejin.cn/post/6844904022659301383#heading-9</a></li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903591375814669">https://juejin.cn/post/6844903591375814669</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/saneri/p/11799865.html">https://www.cnblogs.com/saneri/p/11799865.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-tutorial.html">https://www.runoob.com/docker/docker-tutorial.html</a></li>
+</ul>
 
             </div>
             <hr/>
@@ -641,7 +577,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ldpro.top/2021/05/31/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/">http://ldpro.top/2021/05/31/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/</a>
+                    <a href="http://ldpro.top/2021/10/15/docker%E3%81%AE%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80/">http://ldpro.top/2021/10/15/docker%E3%81%AE%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -679,8 +615,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
-                                    <span class="chip bg-color">性能优化</span>
+                                <a href="/tags/docker/">
+                                    <span class="chip bg-color">docker</span>
                                 </a>
                             
                         </div>
@@ -1111,9 +1047,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/10/15/docker%E3%81%AE%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80/">
                     <div class="card-image">
@@ -1130,9 +1067,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1145,6 +1082,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1163,12 +1101,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/15/%E9%9F%B3%E4%B9%90%E5%B0%8F%E9%A6%86/">
+                <a href="/2021/05/31/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/">
                     <div class="card-image">
                         
-                        <img src="http://cdn.ldpro.top/cover/c4.jpg" class="responsive-img" alt="音乐小馆">
+                        <img src="http://cdn.ldpro.top/cover/c5.jpg" class="responsive-img" alt="关于防抖、节流">
                         
-                        <span class="card-title">音乐小馆</span>
+                        <span class="card-title">关于防抖、节流</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1179,14 +1117,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
-                                    生活
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
                                 </a>
                             
                             
@@ -1196,12 +1134,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9F%B3%E4%B9%90/">
-                        <span class="chip bg-color">音乐</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%B0%A4%E5%85%8B%E9%87%8C%E9%87%8C/">
-                        <span class="chip bg-color">尤克里里</span>
+                    <a href="/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
+                        <span class="chip bg-color">性能优化</span>
                     </a>
                     
                 </div>
