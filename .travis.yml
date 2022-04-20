@@ -6,7 +6,10 @@ cache: npm
 branches:
   only:
     - master # build master branch only
+install:
+  - yarn
 script:
+  - hexo clean
   - hexo generate # generate static files
 deploy:
   provider: pages
