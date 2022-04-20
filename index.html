@@ -1,1236 +1,1295 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
 <head>
-  <meta charset="utf-8">
-  
+    <meta charset="utf-8">
+    <meta name="keywords" content="Lister">
+    <meta name="description" content="随遇而安，随心而动">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
-  
-  <title>Lister</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="随遇而安，随心而动">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lister">
-<meta property="og:url" content="https://litianzun.github.io/hexo-blog/index.html">
-<meta property="og:site_name" content="Lister">
-<meta property="og:description" content="随遇而安，随心而动">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="Li Dong">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/Litianzun.github.io/atom.xml" title="Lister" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/Litianzun.github.io/css/style.css">
 
-<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/Litianzun.github.io/css/prism-tomorrow.css" type="text/css"></head>
+    <title>Lister</title>
+    <link rel="icon" type="image/png" href="/hexo-blog/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/hexo-blog/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/hexo-blog/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/hexo-blog/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/hexo-blog/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/hexo-blog/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/hexo-blog/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/hexo-blog/css/my.css">
+
+    <script src="/hexo-blog/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/hexo-blog/css/prism-tomorrow.css" type="text/css"></head>
+
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/Litianzun.github.io/" id="logo">Lister</a>
-      </h1>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/hexo-blog/" class="waves-effect waves-light">
+                    
+                    <img src="/hexo-blog/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Lister</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo-blog/" class="waves-effect waves-light">
       
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo-blog/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo-blog/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo-blog/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo-blog/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo-blog/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo-blog/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo-blog/navigator" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>导航</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/hexo-blog/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Lister</div>
+        <div class="logo-desc">
+            
+            随遇而安，随心而动
+            
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
         
-          <a class="main-nav-link" href="/Litianzun.github.io/">Home</a>
+        <li class="m-nav-item">
+	  
+		<a href="/hexo-blog/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
         
-          <a class="main-nav-link" href="/Litianzun.github.io/archives">Archives</a>
+        <li class="m-nav-item">
+	  
+		<a href="/hexo-blog/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
         
-      </nav>
-      <nav id="sub-nav">
+        <li class="m-nav-item">
+	  
+		<a href="/hexo-blog/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
         
-          <a id="nav-rss-link" class="nav-icon" href="/Litianzun.github.io/atom.xml" title="RSS Feed"></a>
+        <li class="m-nav-item">
+	  
+		<a href="/hexo-blog/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
         
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://Litianzun.github.io/hexo-blog"></form>
-      </div>
-    </div>
-  </div>
+        <li class="m-nav-item">
+	  
+		<a href="/hexo-blog/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/hexo-blog/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/hexo-blog/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/hexo-blog/navigator" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			导航
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
 </header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-dockerの小试牛刀" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Litianzun.github.io/2021/10/15/docker%E3%81%AE%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80/" class="article-date">
-  <time datetime="2021-10-15T06:10:04.000Z" itemprop="datePublished">2021-10-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/Litianzun.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
     
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Litianzun.github.io/2021/10/15/docker%E3%81%AE%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80/">dockerの小试牛刀</a>
-    </h1>
-  
+<style>
+    .carousel-control {
+        width: 45px;
+        height: 45px;
+        line-height: 55px;
+        border-radius: 45px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 100;
+    }
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>docker现在作为最热门的部署技术之一，作为一个前端也是有必要学习哒!<br>enmmmmm，不过作为一个前端，加上公司也很少用docker，接触的机会实在太少了，根本没有实操机会啊喂，这两天盲人摸🐘般的搞了点皮毛，写下一点点心得：</p>
-<h3 id="什么是docker"><a href="#什么是docker" class="headerlink" title="什么是docker"></a>什么是docker</h3><p>一套开源的、可以搭建虚拟环境的应用容器引擎。特点是隔离化、容器化。</p>
-<h3 id="docker是干啥用的"><a href="#docker是干啥用的" class="headerlink" title="docker是干啥用的"></a>docker是干啥用的</h3><p>通过docker，可以把本地的运行环境移植到一个镜像中，在服务器端就可以直接用上这套环境来进行部署，省去了不同环境之间的转换和不兼容。<br>所以，从作用上来看，似乎和虚拟机有点像。</p>
-<h3 id="docker的优点"><a href="#docker的优点" class="headerlink" title="docker的优点"></a>docker的优点</h3><p>比虚拟机而言，docker启动迅速，开箱即用；内存占用少</p>
-<h3 id="docker的安装"><a href="#docker的安装" class="headerlink" title="docker的安装"></a>docker的安装</h3><p>安装方法网上一搜一大堆，我的电脑是macOS系统，可以直接用homebrew安装，或者也可以手动去官网下载安装包</p>
-<h3 id="docker的核心概念"><a href="#docker的核心概念" class="headerlink" title="docker的核心概念"></a>docker的核心概念</h3><ol>
-<li>镜像<br>镜像是docker的地基，docker官方也有专门的镜像库，提供容器运行时所需的运行环境；<br>相关命令：<br> <strong><em>列出本地镜像列表</em></strong> <code>docker images</code><br> <strong><em>获取镜像</em></strong> <code>docker pull xxx</code><br> <strong><em>查找镜像</em></strong> <code>docker search xxx</code><br> <strong><em>删除镜像</em></strong> <code>docker rmi xxx</code><br> <strong><em>更新/提交镜像</em></strong> <code>docker commit -m=? -a=? 容器id xxx</code></li>
-<li>容器<br>容器是镜像的实例，只有把镜像容器化了才可以在本地使用；<br>相关命令：(xxx代表镜像名)<br> <strong><em>查看运行中容器</em></strong> <code>docker ps</code><br> <strong><em>创建容器</em></strong> <code>docker run [OPTIONS] xxx [COMMAND] </code><br> OPTIONS说明：<br> -d 后台运行容器<br> -i 交互模式运行<br> -t 为容器分配一个伪输入终端<br> -p 指定端口映射，格式<code>主机端口:容器端口</code><br> -P 随机端口映射<br> –name 为容器指定名称<br> -v 绑定卷，一般用于数据传输<br> 上面都是常用的参数，不常用的就不列举了，可以找文档看；此外，-d,-t,-i可以合并写，比如-it,-itd<br>举例：<br>使用docker镜像nginx:latest以后台模式启动一个容器,并将容器命名为mynginx<br><code>docker run -d --name mynginx -d nginx:latest</code><br>使用镜像 nginx:latest，以后台模式启动一个容器,将容器的 80 端口映射到主机的 80 端口,主机的目录 /data 映射到容器的 /data。<br><code>docker run -d -p 80:80 -v /data:/data nginx:latest</code></li>
-</ol>
-<p>此外，容器和容器之间也可以进行互联，方法是先建立一个docker网络<br><code>docker network create -d bridge test-net</code><br>之后创建两个或多个容器，用–network test-net来加入该网络</p>
-<ol start="3">
-<li>仓库<br>仓库是集中存放镜像的地方，官方有<a target="_blank" rel="noopener" href="https://hub.docker.com/">Docker Hub</a></li>
-</ol>
-<p>那么身为一个前端，部署方面最先要接触的必须是nginx，接下来就以nginx的部署为例</p>
-<p>拉取nginx镜像：<br><code>docker pull nginx:latest</code></p>
-<p>运行一个nginx容器：<br><code>docker run --name nginx-test -p 80:80 -d nginx</code></p>
-<p>运行完后看本地ip能否访问,如成功应该出现’Welcome to nginx!’页面(这里我用的8081端口，因为80端口被占用了)<br><img src="http://cdn.ldpro.top/docker-nginx.jpg" width="80%"></p>
-<p>之后我们进入该容器<br><code>docker exec -it 容器id bash</code></p>
-<p>nginx容器的默认nginx存放地址为/usr/share/nginx/html/index.html，理论上我们直接把前端包放进去就ok了。<br>但是如何把本机文件拷贝到容器里呢？</p>
-<p>两种方法：</p>
-<ol>
-<li><p>通过映射：<br><code>docker run --name nginx-blog -p 80:80 -d -v /Users/lidong/Documents/blog/public:/usr/share/nginx/html nginx:latest</code><br>这里我是直接把本机的前端包映射到容器对应的nginx目录,简单粗暴。</p>
-</li>
-<li><p>进一步配置，通过dockerfile<br>Dockerfile是docker的一个统一配置文件，类似于nginx的nginx.conf，用来配置一个自定义的镜像.<br>我们在本地创建一个Dockerfile文件夹，里面有一个Dockerfile文件.<br><code>mkdir Dockerfile</code>  <code>touch Dockerfile</code><br>然后在/Dockerfile/创建web文件夹，在/Dockerfile/web/创建front文件夹，然后把前端dist拖到/Dockerfile/web/front/。</p>
-</li>
-</ol>
-<p>编辑Dockerfile:</p>
-<pre class="line-numbers language-none"><code class="language-none">FROM nginx:latest
-COPY &#x2F;web&#x2F;front&#x2F;dist &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>这两条指令的意思是我们自定义的这个镜像，基于nginx:latest，然后复制本地/web/front/dist文件到容器/usr/share/nginx/html目录</p>
-<p>关于Dockerfile的指令，可参照这篇文章：<a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-dockerfile.html">https://www.runoob.com/docker/docker-dockerfile.html</a></p>
-<p>之后进入Dockerfile文件夹，开始构建镜像:<br><code>docker build -t web-front:latest .</code> //创建一个名称标签为web-front:latest的镜像</p>
-<p>输入docker images查看镜像<br><img src="http://cdn.ldpro.top/docker-nginx2.jpg" width="80%"></p>
-<p>运行容器<br><code>docker run -itd --name web-front-1 -p 80:80 web-front bash</code></p>
-<p>进入容器<br><code>docker exec -it 容器id bash</code></p>
-<p>运行<code>/usr/sbin/nginx</code>开启nginx服务</p>
-<p>好了，可以访问了~<br><img src="http://cdn.ldpro.top/docker-nginx3.jpg" width="100%"></p>
-<p><em>参考文章：</em></p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904022659301383#heading-9">https://juejin.cn/post/6844904022659301383#heading-9</a></li>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903591375814669">https://juejin.cn/post/6844903591375814669</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/saneri/p/11799865.html">https://www.cnblogs.com/saneri/p/11799865.html</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-tutorial.html">https://www.runoob.com/docker/docker-tutorial.html</a></li>
-</ul>
+    #prev-cover {
+        position: absolute;
+        top: 48%;
+        left: 8px;
+    }
 
-      
+    #next-cover {
+        position: absolute;
+        top: 48%;
+        right: 8px;;
+    }
+
+    #prev-cover i {
+        margin-right: 3px;
+    }
+
+    #next-cover i {
+        margin-left: 3px;
+    }
+
+    .carousel-control:hover {
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    .carousel-control i {
+        color: #fff;
+        font-size: 2.4rem;
+    }
+</style>
+
+
+
+<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
+    
+
+    <div class="carousel-item red white-text bg-cover about-cover">
+        <div class="container">
+            <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                light-life
+                
+            </div>
+
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
+            </div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://litianzun.github.io/hexo-blog/2021/10/15/docker%E3%81%AE%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80/" data-id="cl27ljk07000nbkx2bf688ps0" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/docker/" rel="tag">docker</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
-  
-    <article id="post-关于防抖、节流" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Litianzun.github.io/2021/05/31/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/" class="article-date">
-  <time datetime="2021-05-31T09:20:48.000Z" itemprop="datePublished">2021-05-31</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/Litianzun.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-  </div>
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = `http://cdn.ldpro.top/banner/banner${Math.ceil(Math.random()*10)}` + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+</script>
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Litianzun.github.io/2021/05/31/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/">关于防抖、节流</a>
-    </h1>
-  
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>防抖，节流是前端业务中经常用到的一种优化手段，能极大的节省内存开销和前后端交互次数<br>我本人防抖用过几次，节流倒是没接触过，于是特地研究了一下，发现这两者其实大同小异；</p>
-<p>防抖就是设定一个延迟，在这个延迟时间内如果多次调用，只执行最后一次调用<br>节流就是设定一个最大时间，在这个时间内管你调用多少次，也只会调用一次</p>
-<p>所以这两个本质上没区别，都是为了在多次快速频繁调用时，只调用一次。<br>不过一个是取最后一次调用，一个是取第一次调用的结果（反正我个人理解是这样😂）</p>
-<p>正常业务中，为了适应快速开发，防抖和节流不用自己写，一般用lodash的 <strong><em>debounce</em></strong> 和 <strong><em>throttle</em></strong></p>
-<p>自己手写的话，可以参考如下代码：</p>
-<h3 id="防抖"><a href="#防抖" class="headerlink" title="防抖"></a>防抖</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> useState <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
 
-<span class="token keyword">var</span> init1 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> timer1 <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment">//初始化timer，作为计时清除依据</span>
+            <div class="cover-btns">
+                <a href="#articles" class="waves-effect waves-light btn">
+                    <i class="fa fa-angle-double-down"></i>开始阅读
+                </a>
 
-<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>view1<span class="token punctuation">,</span> setView1<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">function</span> <span class="token function">handleClick1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token function">debounce</span><span class="token punctuation">(</span>
-      <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        init1<span class="token operator">++</span><span class="token punctuation">;</span>
-        <span class="token function">setView1</span><span class="token punctuation">(</span>init1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-      <span class="token number">1000</span><span class="token punctuation">,</span>
-      <span class="token boolean">false</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">res</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div<span class="token operator">></span>
-      <span class="token operator">&lt;</span>h2<span class="token operator">></span>防抖<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
-      <span class="token operator">&lt;</span>button id<span class="token operator">=</span><span class="token string">"btn"</span> onClick<span class="token operator">=</span><span class="token punctuation">&#123;</span>handleClick1<span class="token punctuation">&#125;</span><span class="token operator">></span>
-        click
-      <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-      <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"display"</span> style<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span> height<span class="token operator">:</span> <span class="token number">100</span> <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token operator">></span>
-        <span class="token punctuation">&#123;</span>view1<span class="token punctuation">&#125;</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
+                
+                    <a href="https://github.com/Litianzun" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fab fa-github-alt"></i>Github
+                    </a>
+                
+            </div>
+            <div class="cover-social-link">
+    <a href="https://github.com/Litianzun" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
 
-<span class="token comment">/**
- * 防反跳。fn函数在最后一次调用时刻的delay毫秒之后执行！
- * @param fn 执行函数
- * @param delay 时间间隔
- * @param isImmediate 为true，debounce会在delay时间间隔的开始时立即调用这个函数
- * @returns &#123;Function&#125;
- */</span>
-<span class="token keyword">function</span> <span class="token function">debounce</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay<span class="token punctuation">,</span> isImmediate</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"执行"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">var</span> context <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span> <span class="token comment">//获取函数所在作用域this</span>
-    <span class="token keyword">var</span> args <span class="token operator">=</span> arguments<span class="token punctuation">;</span> <span class="token comment">//取得传入参数</span>
-    <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>isImmediate <span class="token operator">&amp;&amp;</span> timer1 <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-      <span class="token comment">//时间间隔外立即执行</span>
-      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      timer1 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-      <span class="token keyword">return</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    timer1 <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      timer1 <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="节流"><a href="#节流" class="headerlink" title="节流"></a>节流</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> useState <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
+    <a href="mailto:834904457@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
 
-<span class="token keyword">var</span> init2 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> timer2 <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> timeStamp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>view2<span class="token punctuation">,</span> setView2<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">function</span> <span class="token function">handleClick2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-      init2<span class="token operator">++</span><span class="token punctuation">;</span>
-      <span class="token function">setView2</span><span class="token punctuation">(</span>init2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">res</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div<span class="token operator">></span>
-      <span class="token operator">&lt;</span>h2<span class="token operator">></span>节流<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
-      <span class="token operator">&lt;</span>button id<span class="token operator">=</span><span class="token string">"btn"</span> onClick<span class="token operator">=</span><span class="token punctuation">&#123;</span>handleClick2<span class="token punctuation">&#125;</span><span class="token operator">></span>
-        click
-      <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-      <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"display"</span> style<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span> height<span class="token operator">:</span> <span class="token number">100</span> <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token operator">></span>
-        <span class="token punctuation">&#123;</span>view2<span class="token punctuation">&#125;</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
 
-<span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">var</span> context <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span> <span class="token comment">//获取函数所在作用域this</span>
-    <span class="token keyword">var</span> args <span class="token operator">=</span> arguments<span class="token punctuation">;</span> <span class="token comment">//取得传入参数</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> timeStamp <span class="token operator">></span> delay<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-      timeStamp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      timer2 <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>效果可查看该视频：<br><video controls width='100%' src='http://cdn.ldpro.top/fd-screen.mov' /></p>
 
-      
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=834904457" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 834904457" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://litianzun.github.io/hexo-blog/2021/05/31/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/" data-id="cl27ljk09000rbkx2dva421ih" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" rel="tag">性能优化</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-音乐小馆" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Litianzun.github.io/2021/04/15/%E9%9F%B3%E4%B9%90%E5%B0%8F%E9%A6%86/" class="article-date">
-  <time datetime="2021-04-15T08:51:46.000Z" itemprop="datePublished">2021-04-15</time>
-</a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/Litianzun.github.io/categories/%E7%94%9F%E6%B4%BB/">生活</a>
-  </div>
+</div>
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+<script>
+    $(function () {
+        let coverSlider = $('.carousel');
+
+        //用户触摸轮播自动 restartPlay 是否生效
+        let initUserPressedOrDraggedActive = false
+
+        //用户触摸轮播自动 restartPlay
+        function initUserPressedOrDragged(instance) {
+            setInterval(() => {
+                if (instance.pressed || instance.dragged) {
+                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
+                    restartPlay()
+                }
+            }, 1000)
+        }
+
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true',
+            onCycleTo() {
+                if (!initUserPressedOrDraggedActive) {
+                    // console.log('initUserPressedOrDraggedActive')
+                    initUserPressedOrDragged(this)
+                    initUserPressedOrDraggedActive = true
+                }
+            },
+        })
+
+        let carouselIntervalId;
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Litianzun.github.io/2021/04/15/%E9%9F%B3%E4%B9%90%E5%B0%8F%E9%A6%86/">音乐小馆</a>
-    </h1>
-  
+        // Loop to call the next cover article picture.
+        let autoCarousel = function () {
+            carouselIntervalId = setInterval(function () {
+                coverSlider.carousel('next');
+            }, 5000);
+        };
+        autoCarousel();
+        
 
-      </header>
+        function restartPlay() {
+            
+            clearInterval(carouselIntervalId);
+            autoCarousel();
+            
+        };
+
+        
+        // prev and next cover post.
+        $('#prev-cover').click(function () {
+            coverSlider.carousel('prev');
+            restartPlay();
+        });
+        $('#next-cover').click(function () {
+            coverSlider.carousel('next');
+            restartPlay();
+        });
+        
+    });
+</script>
+
+
+
+<main class="content">
+
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在这篇文章里，记录我的尤克里里学习之路，学会的曲子会录成视频上传，留作纪念～</p>
-<h3 id="学会的第一首弹唱曲：《情非得已》"><a href="#学会的第一首弹唱曲：《情非得已》" class="headerlink" title="学会的第一首弹唱曲：《情非得已》"></a>学会的第一首弹唱曲：《情非得已》</h3><p><video controls width='100%' src='http://cdn.ldpro.top/music1.mp4'></video></p>
-<h3 id="双音：《夏威夷小曲子》"><a href="#双音：《夏威夷小曲子》" class="headerlink" title="双音：《夏威夷小曲子》"></a>双音：《夏威夷小曲子》</h3><p><video controls width="60%" src='http://cdn.ldpro.top/music2.mp4'></video></p>
-<h3 id="指弹曲：《虫儿飞》"><a href="#指弹曲：《虫儿飞》" class="headerlink" title="指弹曲：《虫儿飞》"></a>指弹曲：《虫儿飞》</h3><p><video controls width="100%" src='http://cdn.ldpro.top/music3.mp4'></video></p>
-
-      
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            <div class="card">
+                <div class="card-content">
+                    
+                        <div class="dream">
+    
+    <div class="title center-align">
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
     </div>
-    <footer class="article-footer">
-      <a data-url="https://litianzun.github.io/hexo-blog/2021/04/15/%E9%9F%B3%E4%B9%90%E5%B0%8F%E9%A6%86/" data-id="cl27ljk05000lbkx2ciy7h08g" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E5%B0%A4%E5%85%8B%E9%87%8C%E9%87%8C/" rel="tag">尤克里里</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E9%9F%B3%E4%B9%90/" rel="tag">音乐</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-前端常用布局" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Litianzun.github.io/2021/03/12/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B8%83%E5%B1%80/" class="article-date">
-  <time datetime="2021-03-12T06:49:53.000Z" itemprop="datePublished">2021-03-12</time>
-</a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/Litianzun.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Litianzun.github.io/2021/03/12/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B8%83%E5%B1%80/">前端常用布局</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近发现了 css Layout 这个网站：<a target="_blank" rel="noopener" href="https://csslayout.io/">https://csslayout.io/</a><br>于是突发奇想，用纯 css 写几个常用布局看看，目前列举了以下四种：</p>
-<p>效果可查看该视频：<br><video controls width='100%' src='http://cdn.ldpro.top/layout-screen.mov' /></p>
-<h3 id="单行等宽布局"><a href="#单行等宽布局" class="headerlink" title="单行等宽布局"></a>单行等宽布局</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>h2<span class="token operator">></span>单行等宽布局<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">'single-row-container'</span><span class="token operator">></span>
-    <span class="token punctuation">&#123;</span><span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">return</span> <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">'single-row-container-item'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.single-row-container</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
-  <span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span>
-  <span class="token property">width</span><span class="token punctuation">:</span> 800px<span class="token punctuation">;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span>
-  <span class="token property">background-color</span><span class="token punctuation">:</span> #00b8ff<span class="token punctuation">;</span>
-  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
-  <span class="token property">padding</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
-  <span class="token property">padding-left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token selector">.single-row-container-item</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-  <span class="token property">background-color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span>
-  <span class="token property">margin-left</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
-  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="多行等宽布局"><a href="#多行等宽布局" class="headerlink" title="多行等宽布局"></a>多行等宽布局</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>h2<span class="token operator">></span>多行等宽布局<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">'multiple-row-container'</span><span class="token operator">></span>
-    <span class="token punctuation">&#123;</span><span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">return</span> <span class="token punctuation">(</span>
-        <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">'multiple-row-container-item-box'</span><span class="token operator">></span>
-            <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">'multiple-row-container-item'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-        <span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.multiple-row-container</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
-  <span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span>
-  <span class="token property">width</span><span class="token punctuation">:</span> 800px<span class="token punctuation">;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 600px<span class="token punctuation">;</span>
-  <span class="token property">background-color</span><span class="token punctuation">:</span> #00b8ff<span class="token punctuation">;</span>
-  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
-  <span class="token property">padding-right</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token selector">.multiple-row-container-item-box</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">flex</span><span class="token punctuation">:</span> 0 0 25%<span class="token punctuation">;</span>
-  <span class="token property">background-color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
-  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token selector">.multiple-row-container-item</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">background-color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span>
-  <span class="token property">margin-left</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
-  <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="粘性布局"><a href="#粘性布局" class="headerlink" title="粘性布局"></a>粘性布局</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>h2<span class="token operator">></span>粘性布局<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">'sticky-container'</span><span class="token operator">></span>
-    <span class="token punctuation">&#123;</span><span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>
-        <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">'sticky-container-item'</span><span class="token operator">></span>元素<span class="token punctuation">&#123;</span>index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-    <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.sticky-container</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">width</span><span class="token punctuation">:</span> 800px<span class="token punctuation">;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
-  <span class="token property">background-color</span><span class="token punctuation">:</span> #00b8ff<span class="token punctuation">;</span>
-  <span class="token property">overflow</span><span class="token punctuation">:</span> scroll<span class="token punctuation">;</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
-  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
-  <span class="token property">line-height</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token selector">.sticky-container-item</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span>
-  <span class="token property">position</span><span class="token punctuation">:</span> sticky<span class="token punctuation">;</span>
-  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-  <span class="token property">background-color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span>
-  <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="圣杯布局"><a href="#圣杯布局" class="headerlink" title="圣杯布局"></a>圣杯布局</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>h2<span class="token operator">></span>圣杯<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">'holy-grail-container'</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>header<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>header<span class="token operator">></span>
-    <span class="token operator">&lt;</span>main className<span class="token operator">=</span><span class="token string">'holy-grail-container-main'</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>aside<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>aside<span class="token operator">></span>
-        <span class="token operator">&lt;</span>article<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>article<span class="token operator">></span>
-        <span class="token operator">&lt;</span>nav<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>nav<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>main<span class="token operator">></span>
-    <span class="token operator">&lt;</span>footer<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>footer<span class="token operator">></span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.holy-grail-container</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
-  <span class="token property">flex-direction</span><span class="token punctuation">:</span> column<span class="token punctuation">;</span>
-  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 700px<span class="token punctuation">;</span>
-  <span class="token property">background-color</span><span class="token punctuation">:</span> #00b8ff<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token selector">.holy-grail-container-main</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
-  <span class="token property">border-top</span><span class="token punctuation">:</span> 1px solid #eee<span class="token punctuation">;</span>
-  <span class="token property">border-bottom</span><span class="token punctuation">:</span> 1px solid #eee<span class="token punctuation">;</span>
-  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token selector">.holy-grail-container-main > aside</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">width</span><span class="token punctuation">:</span> 25%<span class="token punctuation">;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
-  <span class="token property">border-right</span><span class="token punctuation">:</span> 1px solid #eee<span class="token punctuation">;</span>
-  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token selector">.holy-grail-container-main > article</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">flex-grow</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token selector">.holy-grail-container-main > nav</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">width</span><span class="token punctuation">:</span> 25%<span class="token punctuation">;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
-  <span class="token property">border-left</span><span class="token punctuation">:</span> 1px solid #eee<span class="token punctuation">;</span>
-  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token selector">.holy-grail-container > header,
-footer</span> <span class="token punctuation">&#123;</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> 88px<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-      
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
+            让爱我的人不在委屈，让我爱的人再无忧愁，骄傲且自在的活着
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://litianzun.github.io/hexo-blog/2021/03/12/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B8%83%E5%B1%80/" data-id="cl27ljk02000hbkx2gk3gee5h" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E5%B8%83%E5%B1%80/" rel="tag">布局</a></li></ul>
+</div>
 
-    </footer>
-  </div>
-  
-</article>
+                    
 
+                    
 
-  
-    <article id="post-前端常用单位介绍" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Litianzun.github.io/2020/11/20/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%8D%95%E4%BD%8D%E4%BB%8B%E7%BB%8D/" class="article-date">
-  <time datetime="2020-11-20T07:58:43.000Z" itemprop="datePublished">2020-11-20</time>
-</a>
+                    
+                        <link rel="stylesheet" href="/hexo-blog/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
     
-  <div class="article-category">
-    <a class="article-category-link" href="/Litianzun.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;精彩视频(北欧)
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Litianzun.github.io/2020/11/20/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%8D%95%E4%BD%8D%E4%BB%8B%E7%BB%8D/">前端常用单位介绍</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本文记录一下前端的常用单位，分别为：px、em、rem、vw(vh)</p>
-<h3 id="px"><a href="#px" class="headerlink" title="px"></a>px</h3><p>px是大家最耳熟能详的，也叫像素，很多人可能以为它是一个绝对单位，实际上它是一个相对单位，相对于屏幕分辨率而言<br>简单来说，分辨率和屏幕尺寸没有什么关系，作为一个前端来说，需要将注意力更多放在分辨率上，因为1px在分辨率不同的电脑上，显示的大小是不同的；<br>常用分辨率：</p>
-<ul>
-<li>720p：1280*720，高清（HD）</li>
-<li>1080p：1920*1080，超清</li>
-<li>1440p：2560*1440，2k（QHD）</li>
-<li>2160p：3840*2160，4k（一般显示器极限）</li>
-<li>4320p：7680*4320，8k</li>
-</ul>
-<p><strong><em>分辨率越大，1px实际尺寸越小，屏幕越清晰</em></strong><br>很简单的道理，相同尺寸的屏幕比如500mm，一个720p，一个1080p；那么1个像素点的尺寸=500/1280=0.39mm，500/1920=0.26mm；所以分辨率越高，1px越小；<br>而且由这个计算公式可知：尺寸越大，像素点也越大，画面反而不精细了，这就和我们看微信头像，缩略图看着好清晰，放大之后看模糊的一塌糊涂，就是这个道理。所以买显示器不要过分的追求“大”～（扯远了嗷）</p>
-<h3 id="em"><a href="#em" class="headerlink" title="em"></a>em</h3><p>em是相对单位，相对的是当前对象的文字尺寸，如果文字尺寸未设置，则以浏览器默认字体为准（16px）<br>一般来说，用em的话，会在body选择器中指定一下font-size，统一一下1em的大小<br>另外em有个坑需要注意，它会继承父级元素字体的大小，所以如果父级元素指定了大小，那么子元素的大小需要重新计算一下再指定</p>
-<h3 id="rem"><a href="#rem" class="headerlink" title="rem"></a>rem</h3><p>rem为css3新增的一个单位，也是相对单位，区别于em，它只相对于html根元素，避免了em的父级元素继承特点，所以用rem无后顾之忧，你只需管理根元素的字体大小即可<br><em>注意：只兼容IE8+</em></p>
-<h3 id="vw-vh"><a href="#vw-vh" class="headerlink" title="vw/vh"></a>vw/vh</h3><p>vw,vh也是css3新增的单位，也是相对单位，相对的是视窗的大小，100vw等于视窗宽度，100vh等于视窗高度；<br><em>注意：只兼容IE8+</em></p>
-<blockquote>
-<p>具体用哪种单位？<br>根据项目性质决定，web一般使用px，h5一般使用rem，小程序有自己的单位，app不晓得啦，以前我做react-native的时候也是有rn自带的单位</p>
-</blockquote>
-
-      
+            <br />
+            <small class="description center-align">
+                转载自B站@公路旅人FOX
+            </small>
+        
     </div>
-    <footer class="article-footer">
-      <a data-url="https://litianzun.github.io/hexo-blog/2020/11/20/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%8D%95%E4%BD%8D%E4%BB%8B%E7%BB%8D/" data-id="cl27ljjzz000bbkx2hvti3y6i" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E5%8D%95%E4%BD%8D/" rel="tag">单位</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-ES6-Set-Map" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Litianzun.github.io/2020/10/21/ES6-Set-Map/" class="article-date">
-  <time datetime="2020-10-21T06:43:42.000Z" itemprop="datePublished">2020-10-21</time>
-</a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/Litianzun.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Litianzun.github.io/2020/10/21/ES6-Set-Map/">ES6 Set Map</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Map,Set是ES6新增的两种数据结构，由于它们的特性，在开发中可以帮我们处理一些特殊情况，带来效率的提升</p>
-<h3 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h3><p>Set最大的特性是它的元素唯一性，它本身可以存储任何类型的值。</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//set常用api</span>
-  <span class="token keyword">let</span> set <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-  set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
-  set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'str'</span><span class="token punctuation">)</span>
-  set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-  set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>x<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>y<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-  set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-  set<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>set<span class="token punctuation">,</span>set<span class="token punctuation">.</span>size<span class="token punctuation">,</span>set<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>set<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>set<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<img src="http://cdn.ldpro.top/set_demo1.png" width="700">
-
-<p>唯一性的体现：</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> set <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
-set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'str'</span><span class="token punctuation">)</span>
-set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>x<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>y<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-set<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
-set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>x<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>y<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>set<span class="token punctuation">,</span>set<span class="token punctuation">.</span>size<span class="token punctuation">,</span>set<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>set<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>set<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<img src="http://cdn.ldpro.top/set_demo2.png" width="450">
-很明显，1被成功过滤，但是对象没有被过滤，因为数字是基本类型，对象是引用类型，所以这两个对象本质上是不相等的，这两个概念，不懂的可以百度补一下
-
-<p>然后set有一个很常用的功能就是和数组之间的类型转换</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> set <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'v1'</span><span class="token punctuation">,</span><span class="token string">'v2'</span><span class="token punctuation">,</span><span class="token string">'v3'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">let</span> setArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>set<span class="token punctuation">]</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>set<span class="token punctuation">,</span>setArr<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<img src="http://cdn.ldpro.top/set_demo3.png" width="600">
-
-<p>其实看控制台打印发现，Set类似于一个对象，它本身也是一个引用类型</p>
-<h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><p>Map是用来保存键值对的，从这一点来看，妥妥的对象特性，但Map和Object不相同的一点是，它的键值可以存储任何值<br>Map和Object的区别：</p>
-<ol>
-<li>Object的键只能是字符串或者Symbols，但Map的键可以是任意值</li>
-<li>Object键值无序，Map键值有序</li>
-<li>Object键值对个数无法查看，Map可查看</li>
-<li>Object有原型链，原型的键名可能会与对象上的键名冲突</li>
-</ol>
-<p>example:</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'str-key'</span><span class="token punctuation">,</span><span class="token string">'str-key对应的value'</span><span class="token punctuation">)</span>
-  map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>x<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token string">'obj对应的value'</span><span class="token punctuation">)</span>
-  map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token string">'func对应的value'</span><span class="token punctuation">)</span>
-  map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">NaN</span><span class="token punctuation">,</span><span class="token string">'NaN对应的value'</span><span class="token punctuation">)</span>
-  map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span><span class="token string">'null对应的value'</span><span class="token punctuation">)</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span>size<span class="token punctuation">,</span>map<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>map<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>map<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="http://cdn.ldpro.top/map_demo1.png" width="600">
-
-<p>也可以用forEach循环键值对：</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js">map<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">value<span class="token punctuation">,</span>key</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>value <span class="token operator">+</span> <span class="token string">' = '</span> <span class="token operator">+</span> key<span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>或者用for…of循环</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span>value<span class="token punctuation">]</span> <span class="token keyword">of</span> map<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>key <span class="token operator">+</span> <span class="token string">' = '</span> <span class="token operator">+</span> value<span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<img src="http://cdn.ldpro.top/map_demo2.png" width="500">
-
-<p><em>但是for…in循环没得用，这一点上，看得出来Map不是纯对象，还是有差异的</em></p>
-<p>Map对象也是可以和数组之间进行类型转换,但是只能用二维数组</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'key1'</span><span class="token punctuation">,</span><span class="token string">'value1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token string">'key2'</span><span class="token punctuation">,</span><span class="token string">'value2'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">let</span> mapArr <span class="token operator">=</span> Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>map<span class="token punctuation">)</span>
-  <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span>value<span class="token punctuation">]</span> <span class="token keyword">of</span> map<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>key <span class="token operator">+</span> <span class="token string">' = '</span> <span class="token operator">+</span> value<span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mapArr<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="http://cdn.ldpro.top/map_demo3.png" width="500">
-
-      
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                     style="height: 400px;"></div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://litianzun.github.io/hexo-blog/2020/10/21/ES6-Set-Map/" data-id="cl27ljk01000gbkx2bhjb3050" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/ES6/" rel="tag">ES6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/Set-Map/" rel="tag">Set/Map</a></li></ul>
+</div>
 
-    </footer>
-  </div>
-  
-</article>
+<script src="/hexo-blog/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: 'http://cdn.ldpro.top/yo.mp4',
+                pic: 'http://cdn.ldpro.top/yo.jpg',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
 
+                    
 
-  
-    <article id="post-前端部署个人小记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Litianzun.github.io/2020/10/12/%E5%89%8D%E7%AB%AF%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%B0%8F%E8%AE%B0/" class="article-date">
-  <time datetime="2020-10-12T01:06:34.000Z" itemprop="datePublished">2020-10-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/Litianzun.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Litianzun.github.io/2020/10/12/%E5%89%8D%E7%AB%AF%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%B0%8F%E8%AE%B0/">前端部署个人小记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><em>声明：前端部署网上搜索有不少的文章，但是这里列举的是我自己目前用的一些手段，绝对是亲身实践过的</em></p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这里的部署主要分两块：前端和后端；前端指的是我们打出来的dist包，后端指的是一些后端服务，既然这里说的是前端部署，那必须得是node服务了，这个服务部署好之后我们就可以访问它的api了；这样，一个前后端分离的项目就成功部署好了，这里我依据的是我自己部署好的项目：<a target="_blank" rel="noopener" href="http://175.24.123.231:8081/">网易云音乐</a>，下面我详细说明</p>
-<h3 id="部署前的准备"><a href="#部署前的准备" class="headerlink" title="部署前的准备"></a>部署前的准备</h3><p>那肯定是需要一台服务器，域名的话，有需求就买一个吧，暂时不需要的话像我一样用ip地址访问其实问题也不大，就是丑一点😂<br>我这里用到的服务器是腾讯云购买的centOS云服务器，然后用的是学生体验套餐，10元/月，我续了一年，目前也够用了；<br><img src="http://cdn.ldpro.top/p1.png" width= 360 /><br>选择服务器时需要注意：一个是操作系统，一个是选择地区；操作系统建议linux，也就是这里选择unbuntu或者centOS，我用的是centOS，地区的话选择离自己最近的地区，速度相应的也会快些<br><img src="http://cdn.ldpro.top/p2.png" width= 360 /><br>买好之后，腾讯云会发送一封站内信，里面有云服务器的登录密码，之后进入云服务器-实例，找到自己刚刚购买的服务器，点击登录<br>登录的话分好几种方式，这里我列举我本人觉得最好用的一种：ssh登录<br><img src="http://cdn.ldpro.top/p3.png" width= 360 /><br>按图示登录之后，我们就可以通过终端来控制云服务器了，首先我们搭建必要的环境：<br>（这里要插一句，如果你不想之后一直用命令行的话，还是装个宝塔面板吧，不然之后上传文件啥的会很烦，这都是本人的血泪史啊～，注意宝塔面板必须在这个阶段装，如果后面安装了nginx啥的就不可以装宝塔面板了）<br>那么我们需要安装git+node，linux环境安装git很简单：<code>yum -y install git</code>，安装node的话，本人用的是重新设置镜像，但是发现node版本不是最新的，这里建议大家跟着网上教程来吧：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/cb29ceb08a2c">https://www.jianshu.com/p/cb29ceb08a2c</a>，这两个装好后，基本的环境就搭建好了</p>
-<h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><p>对于前端部署而言，后端服务很容易部署，这里需要用到的是pm2以及一个完整的node项目，node项目直接从git拉取，拉下来之后找到对应的启动文件，比如你的启动文件是app.js，正常启动需要运行<code>node app.js</code>，理论上来说，当运行了这个脚本后，就已经可以了，但是不久后你会惊奇的发现，10分钟不到，这个服务莫名其妙的关闭了！没错，这个时候，pm2就来了～<br>pm2是一个node进程管理工具，你可以用它来管理你的node进程，并查看node进程的状态，以及性能监控，负载均衡等。。。<br>pm2小册子：<a target="_blank" rel="noopener" href="https://juejin.im/post/6844903710037016584">pm2简易使用手册</a><br>接下来，运行这条命令：<code>pm2 start ./xxx.js</code>，（xxx.js是你的node启动文件），然后你就可以通过<code>pm2 list</code>来查看进程啦～<br>服务跑好之后，测试接口是否可以访问：服务器公网ip+node服务的端口号</p>
-<h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><p>这里仅记录我自己使用的方式：Linux 系统通过 FTP 上传文件到云服务器；参考文档：<a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/213/42501">https://cloud.tencent.com/document/product/213/42501</a><br>ftp上传之前，需要确保服务器已经搭建好ftp服务<a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/213/10912">https://cloud.tencent.com/document/product/213/10912</a><br>照着上面的文档撸就完事了，文件上传好之后，记录下文件在服务器中的位置，这个之后有用；<br>接下来就是配置nginx了，我们通过它的代理功能来让用户可以访问我们的web；<br>linux下安装nginx: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/xxoome/p/5866475.html">https://www.cnblogs.com/xxoome/p/5866475.html</a><br>nginx安装好后，修改它的配置文件：nginx.conf，下面是我自己的配置文件：<br><em>这台服务器我部署了四个项目，8081，8082，8083，和80默认端口</em></p>
-<pre class="line-numbers language-nginx.conf" data-language="nginx.conf"><code class="language-nginx.conf"># For more information on configuration, see:
-#   * Official English Documentation: http:&#x2F;&#x2F;nginx.org&#x2F;en&#x2F;docs&#x2F;
-#   * Official Russian Documentation: http:&#x2F;&#x2F;nginx.org&#x2F;ru&#x2F;docs&#x2F;
-
-# user nginx;
-  user root;
-worker_processes auto;
-error_log &#x2F;var&#x2F;log&#x2F;nginx&#x2F;error.log;
-pid &#x2F;run&#x2F;nginx.pid;
-
-# Load dynamic modules. See &#x2F;usr&#x2F;share&#x2F;doc&#x2F;nginx&#x2F;README.dynamic.
-# include &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;modules&#x2F;*.conf;
-
-events &#123;
-    worker_connections 1024;
-&#125;
-
-http &#123;
-    log_format  main  &#39;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#39;
-                      &#39;$status $body_bytes_sent &quot;$http_referer&quot; &#39;
-                      &#39;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#39;;
-
-    access_log  &#x2F;var&#x2F;log&#x2F;nginx&#x2F;access.log  main;
-
-    sendfile            on;
-    tcp_nopush          on;
-    tcp_nodelay         on;
-    keepalive_timeout   65;
-    types_hash_max_size 2048;
-
-    include             &#x2F;etc&#x2F;nginx&#x2F;mime.types;
-    default_type        application&#x2F;octet-stream;
-
-    # Load modular configuration files from the &#x2F;etc&#x2F;nginx&#x2F;conf.d directory.
-    # See http:&#x2F;&#x2F;nginx.org&#x2F;en&#x2F;docs&#x2F;ngx_core_module.html#include
-    # for more information.
-    include &#x2F;etc&#x2F;nginx&#x2F;conf.d&#x2F;*.conf;
-    server &#123;
-        listen 8081;
-        server_name localhost1;
-        root &#x2F;etc&#x2F;nginx&#x2F;wycloud;
-        charset &#39;utf-8&#39;;
-
-        location &#x2F; &#123;
-        root &#x2F;etc&#x2F;nginx&#x2F;wycloud;
-        index index.html;
-        try_files $uri $uri&#x2F; &#x2F;index.html;
-&#125;
-location ~.*\.(gif|jpg|jpeg|png|bmp|swf|eot|css|svg|ttf|woff|woff2|properties|json)?$ &#123;
- access_log off;
-            root &#x2F;etc&#x2F;nginx&#x2F;wycloud;
-            expires 30d;
-            break;
-        &#125;
-&#125;
-    server &#123;
-        listen       8082;
-       #listen       [::]:80 default_server;
-        server_name  localhost2;
-        root         &#x2F;etc&#x2F;nginx&#x2F;html;
-        charset &#39;utf-8&#39;;
-        # Load configuration files for the default server block.
-        include &#x2F;etc&#x2F;nginx&#x2F;default.d&#x2F;*.conf;
-
-        location &#x2F; &#123;
-root &#x2F;etc&#x2F;nginx&#x2F;html;
-index index.html;
-try_files $uri $uri&#x2F; &#x2F;index.html;
-        &#125;
- location ~.*\.(gif|jpg|jpeg|png|bmp|swf|eot|svg|ttf|woff|woff2|properties|json)?$ &#123;
- access_log off;
-            root &#x2F;etc&#x2F;nginx&#x2F;html;
-            expires 30d;
-            break;
-        &#125;
-
-        error_page 404 &#x2F;404.html;
-            location &#x3D; &#x2F;40x.html &#123;
-        &#125;
-
-        error_page 500 502 503 504 &#x2F;50x.html;
-            location &#x3D; &#x2F;50x.html &#123;
-        &#125;
-    &#125;
-server &#123;
-    listen 80;
-    listen [::]:80;
-    root &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;blog;
-    server_name lidongss;
-    location &#x2F; &#123;
-            # First attempt to serve request as file, then
-            # as directory, then fall back to displaying a 404.
-            try_files $uri $uri&#x2F; &#x3D;404;
-    &#125;
-   location &#x2F;navigator&#x2F; &#123;
-        return 302 http:&#x2F;&#x2F;175.24.123.231:8083&#x2F;;
-        &#125;
-&#125;
-server &#123;
-        listen 8083;
-        server_name webstack;
-        charset &#39;utf-8&#39;;
-
-        location &#x2F; &#123;
-        root &#x2F;etc&#x2F;nginx&#x2F;webstack;
-        index index.html;
-        try_files $uri $uri&#x2F; &#x2F;index.html;
-&#125;
-&#125;
+                    
+                    <div id="recommend-sections" class="recommend">
+                        
 
 
-# Settings for a TLS enabled server.
-#
-#    server &#123;
-#        listen       443 ssl http2 default_server;
-#        listen       [::]:443 ssl http2 default_server;
-#        server_name  _;
-#        root         &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html;
-#
-#        ssl_certificate &quot;&#x2F;etc&#x2F;pki&#x2F;nginx&#x2F;server.crt&quot;;
-#        ssl_certificate_key &quot;&#x2F;etc&#x2F;pki&#x2F;nginx&#x2F;private&#x2F;server.key&quot;;
-#        ssl_session_cache shared:SSL:1m;
-#        ssl_session_timeout  10m;
-#        ssl_ciphers HIGH:!aNULL:!MD5;
-#        ssl_prefer_server_ciphers on;
-#
-#        # Load configuration files for the default server block.
-#        include &#x2F;etc&#x2F;nginx&#x2F;default.d&#x2F;*.conf;
-#
-#        location &#x2F; &#123;
-#        &#125;
-#
-#        error_page 404 &#x2F;404.html;
-#            location &#x3D; &#x2F;40x.html &#123;
-#        &#125;
-#
-#        error_page 500 502 503 504 &#x2F;50x.html;
-#            location &#x3D; &#x2F;50x.html &#123;
-#        &#125;
-#    &#125;
 
-&#125;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>nginx的相关知识还是要稍微学习一下的，对于我们前端部署项目来说，学会基本的代理方法就可以了</p>
-<p>之后每次要更新前端项目的话，<code>cd /xxx</code>进入对应的资源文件夹，执行<code>mdelete *</code>，删除原来所有的包，然后再执行<code>lcd /xx</code>进入你本地的项目文件夹，执行<code>mput *</code>批量上传文件</p>
-<p><em>tip: nginx的坑很多，零基础搞这东西就和盲人摸象一样，差点没把我搞死。。</em><br>下面列举一些我个人常用的命令：</p>
-<ul>
-<li>nginx重启：<code>nginx -s reload</code></li>
-<li>列举当前开放的服务：<code>netstat -ntlp</code></li>
-<li>启动nginx：<code>nginx -c /etc/nginx/nginx.conf</code><br>上传资源的时候，如果是文件夹，会提示权限不够：</li>
-<li>开权限：<code>chown -R ftpuser:ftpuser /var/ftp/test</code>(后面的路径换为文件夹的地址)</li>
-</ul>
-
-      
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://litianzun.github.io/hexo-blog/2020/10/12/%E5%89%8D%E7%AB%AF%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%B0%8F%E8%AE%B0/" data-id="cl27ljjzw0007bkx285q55wbe" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E5%89%8D%E7%AB%AF%E9%83%A8%E7%BD%B2/" rel="tag">前端部署</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E9%83%A8%E7%BD%B2/" rel="tag">部署</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-黑神话-悟空" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Litianzun.github.io/2020/09/30/%E9%BB%91%E7%A5%9E%E8%AF%9D-%E6%82%9F%E7%A9%BA/" class="article-date">
-  <time datetime="2020-09-30T06:10:18.000Z" itemprop="datePublished">2020-09-30</time>
-</a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/Litianzun.github.io/categories/%E7%94%9F%E6%B4%BB/">生活</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
     
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/hexo-blog/2021/10/15/docker%E3%81%AE%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80/">
+                        <div class="card-image">
+                            
+                            <img src="http://cdn.ldpro.top/cover/docker.jpg" class="responsive-img" alt="dockerの小试牛刀">
+                            
+                            <span class="card-title">dockerの小试牛刀</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/hexo-blog/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/hexo-blog/tags/docker/">
+                            <span class="chip bg-color">docker</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/hexo-blog/2021/05/31/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/">
+                        <div class="card-image">
+                            
+                            <img src="http://cdn.ldpro.top/cover/c5.jpg" class="responsive-img" alt="关于防抖、节流">
+                            
+                            <span class="card-title">关于防抖、节流</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/hexo-blog/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/hexo-blog/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
+                            <span class="chip bg-color">性能优化</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/hexo-blog/2021/04/15/%E9%9F%B3%E4%B9%90%E5%B0%8F%E9%A6%86/">
+                        <div class="card-image">
+                            
+                            <img src="http://cdn.ldpro.top/cover/c4.jpg" class="responsive-img" alt="音乐小馆">
+                            
+                            <span class="card-title">音乐小馆</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/hexo-blog/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
+                                    生活
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/hexo-blog/tags/%E9%9F%B3%E4%B9%90/">
+                            <span class="chip bg-color">音乐</span>
+                        </a>
+                        
+                        <a href="/hexo-blog/tags/%E5%B0%A4%E5%85%8B%E9%87%8C%E9%87%8C/">
+                            <span class="chip bg-color">尤克里里</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/hexo-blog/2021/03/12/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B8%83%E5%B1%80/">
+                        <div class="card-image">
+                            
+                            <img src="http://cdn.ldpro.top/cover/p1.jpg" class="responsive-img" alt="前端常用布局">
+                            
+                            <span class="card-title">前端常用布局</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-12
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/hexo-blog/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/hexo-blog/tags/%E5%B8%83%E5%B1%80/">
+                            <span class="chip bg-color">布局</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/hexo-blog/2020/11/20/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%8D%95%E4%BD%8D%E4%BB%8B%E7%BB%8D/">
+                        <div class="card-image">
+                            
+                            <img src="http://cdn.ldpro.top/cover/c3.jpg" class="responsive-img" alt="前端常用单位介绍">
+                            
+                            <span class="card-title">前端常用单位介绍</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/hexo-blog/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/hexo-blog/tags/%E5%8D%95%E4%BD%8D/">
+                            <span class="chip bg-color">单位</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/hexo-blog/2020/10/21/ES6-Set-Map/">
+                        <div class="card-image">
+                            
+                            <img src="http://cdn.ldpro.top/cover/c2.jpg" class="responsive-img" alt="ES6 Set Map">
+                            
+                            <span class="card-title">ES6 Set Map</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-21
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/hexo-blog/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/hexo-blog/tags/ES6/">
+                            <span class="chip bg-color">ES6</span>
+                        </a>
+                        
+                        <a href="/hexo-blog/tags/Set-Map/">
+                            <span class="chip bg-color">Set/Map</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/hexo-blog/2020/10/12/%E5%89%8D%E7%AB%AF%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%B0%8F%E8%AE%B0/">
+                        <div class="card-image">
+                            
+                            <img src="http://cdn.ldpro.top/cover/other2.jpeg" class="responsive-img" alt="前端部署个人小记">
+                            
+                            <span class="card-title">前端部署个人小记</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-12
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/hexo-blog/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/hexo-blog/tags/%E5%89%8D%E7%AB%AF%E9%83%A8%E7%BD%B2/">
+                            <span class="chip bg-color">前端部署</span>
+                        </a>
+                        
+                        <a href="/hexo-blog/tags/%E9%83%A8%E7%BD%B2/">
+                            <span class="chip bg-color">部署</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/hexo-blog/2020/09/30/%E9%BB%91%E7%A5%9E%E8%AF%9D-%E6%82%9F%E7%A9%BA/">
+                        <div class="card-image">
+                            
+                            <img src="http://cdn.ldpro.top/wukong.jpeg" class="responsive-img" alt="黑神话:悟空">
+                            
+                            <span class="card-title">黑神话:悟空</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-30
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/hexo-blog/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
+                                    生活
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/hexo-blog/tags/%E6%B8%B8%E6%88%8F/">
+                            <span class="chip bg-color">游戏</span>
+                        </a>
+                        
+                        <a href="/hexo-blog/tags/%E5%9B%BD%E4%BA%A73A%E5%A4%A7%E4%BD%9C/">
+                            <span class="chip bg-color">国产3A大作</span>
+                        </a>
+                        
+                        <a href="/hexo-blog/tags/%E5%8D%95%E6%9C%BA/">
+                            <span class="chip bg-color">单机</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/hexo-blog/2020/09/22/React%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/">
+                        <div class="card-image">
+                            
+                            <img src="http://cdn.ldpro.top/cover/c1.jpg" class="responsive-img" alt="React性能优化的几种方式">
+                            
+                            <span class="card-title">React性能优化的几种方式</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-22
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/hexo-blog/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/hexo-blog/tags/React/">
+                            <span class="chip bg-color">React</span>
+                        </a>
+                        
+                        <a href="/hexo-blog/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
+                            <span class="chip bg-color">性能优化</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/hexo-blog/2020/09/21/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D/">
+                        <div class="card-image">
+                            
+                            <img src="http://cdn.ldpro.top/cover/myBlog.jpg" class="responsive-img" alt="博客介绍">
+                            
+                            <span class="card-title">博客介绍</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-21
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/hexo-blog/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
+                                    生活
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/hexo-blog/tags/%E5%8D%9A%E5%AE%A2/">
+                            <span class="chip bg-color">博客</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Litianzun.github.io/2020/09/30/%E9%BB%91%E7%A5%9E%E8%AF%9D-%E6%82%9F%E7%A9%BA/">黑神话:悟空</a>
-    </h1>
-  
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="/hexo-blog/about" target="_blank">Li Dong</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2019";
+                    var startMonth = "6";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/hexo-blog/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="https://beian.miit.gov.cn" target="_blank">苏ICP备2020056286号</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Litianzun" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>我TM吹爆!!!</strong><br>在国内低质量手游网游遍地走的大环境下，截止目前，几乎没有什么拿的出手的3A单机游戏，对于一个游戏爱好者来说，惜哉痛哉！<br>而现在，一款大作正在孕育而生！</p>
-<h3 id="游戏截图"><a href="#游戏截图" class="headerlink" title="游戏截图"></a>游戏截图</h3><img src="http://cdn.ldpro.top/wukong.jpeg" width="100%" />
 
-<p>《黑神话：悟空》的开发商为游戏科学公司，《战争艺术：赤潮》就是他们开发的手游，也是他们现在主要的收入来源；一个小规模团队可以做出这样的产品，证明他们是有实力和梦想的，也希望他们可以成为国内单机游戏的先驱者，我对这款游戏表示支持!</p>
-<h3 id="宣传视频"><a href="#宣传视频" class="headerlink" title="宣传视频"></a>宣传视频</h3><p><video controls width="100%" src="http://www.heishenhua.com/video/b1/gamesci_wukong.mp4"></video></p>
-<hr>
-<h3 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h3><p>游戏官网：<a target="_blank" rel="noopener" href="http://www.heishenhua.com/">《黑神话：悟空》</a><br>看了宣传视频后，真的好想玩！不知道我的1660s带不带的动😂</p>
 
-      
+    <a href="mailto:834904457@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=834904457" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 834904457" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://litianzun.github.io/hexo-blog/2020/09/30/%E9%BB%91%E7%A5%9E%E8%AF%9D-%E6%82%9F%E7%A9%BA/" data-id="cl27ljjzx0009bkx2h8n8fmjj" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E5%8D%95%E6%9C%BA/" rel="tag">单机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E5%9B%BD%E4%BA%A73A%E5%A4%A7%E4%BD%9C/" rel="tag">国产3A大作</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-React性能优化的几种方式" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Litianzun.github.io/2020/09/22/React%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" class="article-date">
-  <time datetime="2020-09-22T01:11:31.000Z" itemprop="datePublished">2020-09-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/Litianzun.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Litianzun.github.io/2020/09/22/React%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/">React性能优化的几种方式</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>React的性能优化大都是交由用户自己来做的，主要体现在减少不必要的渲染，减少不必要的js计算，从而达到性能优化的目的</p>
-<h3 id="class组件"><a href="#class组件" class="headerlink" title="class组件"></a>class组件</h3><ol>
-<li><p><strong>PureComponent</strong><br>优点：使用方便； 缺点：仅做浅层比较，对于复杂数据结构无法正确识别</p>
-</li>
-<li><p><strong>shouldComponentUpdate</strong><br>这个大家都知道，也是最常用的，前提是不可以用PureComponent<br>使用方式：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">(</span><span class="token parameter">nextProps<span class="token punctuation">,</span> nextState</span><span class="token punctuation">)</span> <span class="token operator">=></span> boolean<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><font color=red size=2> *不建议在 shouldComponentUpdate() 中进行深层比较或使用 JSON.stringify()。这样非常影响效率，且会损害性能；现在React正逐步减少shouldComponentUpdate的重要性 </font></p>
-</li>
-</ol>
-<h3 id="function组件"><a href="#function组件" class="headerlink" title="function组件"></a>function组件</h3><ol>
-<li><strong>React.memo</strong><br>可以这么理解，React.memo = PureComponent + shouldComponentUpdate；因为它也是做浅层对比，也和should一样有具体的手动控制方法<br>不过memo的原理是记忆缓存上一次的渲染结果，而should是直接跳过更新<br>使用方法：</li>
-</ol>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> MyComponent <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">memo</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token function">MyComponent</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token comment">/* 使用 props 渲染 */</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">prevProps<span class="token punctuation">,</span> nextProps</span><span class="token punctuation">)</span> <span class="token operator">=></span> boolean<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><font color=red size=2>*注意后面的回调函数返回结果和should是相反的</font></p>
-<ol start="2">
-<li><strong>React.useMemo(Hooks)</strong><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> memoizedValue <span class="token operator">=</span> <span class="token function">useMemo</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">computeExpensiveValue</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-React官方定义：<blockquote>
-<p>把“创建”函数和依赖项数组作为参数传入 useMemo，它仅会在某个依赖项改变时才重新计算 memoized 值。这种优化有助于避免在每次渲染时都进行高开销的计算。<br>通俗易懂的解释下：该方法接收两个参数，第一个是一个函数，返回一个值，第二个是他的依赖项，只有当依赖项里的值发生变化了，前面那个函数才会重新计算，否则不会重新计算，套用上次缓存下来的值，避免无用的js计算。</p>
-</blockquote>
-</li>
-</ol>
-<p><em>特地去搭了个服务演示一下，下面是我的代码:</em></p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>num<span class="token punctuation">,</span> setNum<span class="token punctuation">]</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>str<span class="token punctuation">,</span> setStr<span class="token punctuation">]</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"yeah"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">value</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"重新计算了嗷"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> str <span class="token operator">+</span> <span class="token string">"~~"</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-  <span class="token comment">// const memoValue = React.useMemo(value,[str])</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'1'</span><span class="token punctuation">)</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div<span class="token operator">></span>
-      <span class="token operator">&lt;</span>h1<span class="token operator">></span>在线调试页面<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span<span class="token operator">></span><span class="token punctuation">&#123;</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">setNum</span><span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token operator">></span>改变num<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">setStr</span><span class="token punctuation">(</span>str <span class="token operator">+</span> <span class="token string">'-'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token operator">></span>改变str<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>首先是没有用memo的情况，value的结果完全是跟着str走的，按理说我们想看到的是点击第一个按钮不触发重新计算，但是它计算了，因为React的机制，页面的state改变了，就会重新渲染，那么return里的代码会重新走一遍；<br><img src = 'https://ftp.bmp.ovh/imgs/2020/09/3f478f113119cd7a.jpg' width=360 /><br>上图是我分别点击了两个按钮之后触发的console，接下来试试useMemo</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>num<span class="token punctuation">,</span> setNum<span class="token punctuation">]</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>str<span class="token punctuation">,</span> setStr<span class="token punctuation">]</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"yeah"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">value</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"重新计算了嗷"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> str <span class="token operator">+</span> <span class="token string">"~~"</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> memoValue <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">useMemo</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span><span class="token punctuation">[</span>str<span class="token punctuation">]</span><span class="token punctuation">)</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'1'</span><span class="token punctuation">)</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div<span class="token operator">></span>
-      <span class="token operator">&lt;</span>h1<span class="token operator">></span>在线调试页面<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span<span class="token operator">></span><span class="token punctuation">&#123;</span>memoValue<span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">setNum</span><span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token operator">></span>改变num<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">setStr</span><span class="token punctuation">(</span>str <span class="token operator">+</span> <span class="token string">'-'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token operator">></span>改变str<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>再次点击两个按钮:<br><img src = 'https://ftp.bmp.ovh/imgs/2020/09/0664e7ce9c69d8ed.jpg' width=360 /><br>显然，虽然页面重新渲染了，但是value没有重新计算了，是不是很神奇～<br>例子只是很简单的一个展示，当计算开销大的时候，比如有多次循环或者递归啥的，这性能优化可就明显了</p>
-<ol start="3">
-<li><strong>React.useCallback</strong><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> memoizedCallback <span class="token operator">=</span> <span class="token function">useCallback</span><span class="token punctuation">(</span>
-  <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-    <span class="token function">doSomething</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-  <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">]</span><span class="token punctuation">,</span>
-<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-和useMemo没什么差别，区别是返回的是一个回调函数，memo返回的是值</li>
-</ol>
-<p>目前想到的就是这些，也是比较常用的，后续有其他的想法会继续更新～</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://litianzun.github.io/hexo-blog/2020/09/22/React%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" data-id="cl27ljjzp0003bkx2bin33ch7" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/React/" rel="tag">React</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" rel="tag">性能优化</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-博客介绍" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Litianzun.github.io/2020/09/21/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D/" class="article-date">
-  <time datetime="2020-09-21T01:54:51.000Z" itemprop="datePublished">2020-09-21</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/Litianzun.github.io/categories/%E7%94%9F%E6%B4%BB/">生活</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Litianzun.github.io/2020/09/21/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D/">博客介绍</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>hexo搭建的一个博客，部署在自己的服务器上，接下来可能会买一个域名</p>
-<p>搭博客的目的不为别的，就是闲的。没事的时候我会在上面写一些文章，可能是生活上的琐事，或者是一些技术类文章，或者一些音乐，电影，美剧啥的，甚至可能是一些天马行空的想法。。</p>
-<p>其实很早就有搞一个博客的想法了，程序员也不是非得搞什么技术博客，博客首先就是一个记录分享的平台，也是自己的一个小家。在如今人人都是社畜的时代，与其拼搏一辈子为了一个火柴盒，倒不如把自己这个虚拟的小家好好修缮一下，也算是一种心灵的寄托～，嗯–自己把自己都说动了&gt;&lt;</p>
-<p>总之，更新随缘，大家也就看看图一乐吧</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://litianzun.github.io/hexo-blog/2020/09/21/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D/" data-id="cl27ljjze0001bkx2dkiv2fhc" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Litianzun.github.io/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/Litianzun.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/Litianzun.github.io/categories/%E7%94%9F%E6%B4%BB/">生活</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/ES6/" rel="tag">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/React/" rel="tag">React</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/Set-Map/" rel="tag">Set/Map</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/docker/" rel="tag">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E5%89%8D%E7%AB%AF%E9%83%A8%E7%BD%B2/" rel="tag">前端部署</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E5%8D%95%E4%BD%8D/" rel="tag">单位</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E5%8D%95%E6%9C%BA/" rel="tag">单机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E5%9B%BD%E4%BA%A73A%E5%A4%A7%E4%BD%9C/" rel="tag">国产3A大作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E5%B0%A4%E5%85%8B%E9%87%8C%E9%87%8C/" rel="tag">尤克里里</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E5%B8%83%E5%B1%80/" rel="tag">布局</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" rel="tag">性能优化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E9%83%A8%E7%BD%B2/" rel="tag">部署</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Litianzun.github.io/tags/%E9%9F%B3%E4%B9%90/" rel="tag">音乐</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/Litianzun.github.io/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/Litianzun.github.io/tags/React/" style="font-size: 10px;">React</a> <a href="/Litianzun.github.io/tags/Set-Map/" style="font-size: 10px;">Set/Map</a> <a href="/Litianzun.github.io/tags/docker/" style="font-size: 10px;">docker</a> <a href="/Litianzun.github.io/tags/%E5%89%8D%E7%AB%AF%E9%83%A8%E7%BD%B2/" style="font-size: 10px;">前端部署</a> <a href="/Litianzun.github.io/tags/%E5%8D%95%E4%BD%8D/" style="font-size: 10px;">单位</a> <a href="/Litianzun.github.io/tags/%E5%8D%95%E6%9C%BA/" style="font-size: 10px;">单机</a> <a href="/Litianzun.github.io/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a> <a href="/Litianzun.github.io/tags/%E5%9B%BD%E4%BA%A73A%E5%A4%A7%E4%BD%9C/" style="font-size: 10px;">国产3A大作</a> <a href="/Litianzun.github.io/tags/%E5%B0%A4%E5%85%8B%E9%87%8C%E9%87%8C/" style="font-size: 10px;">尤克里里</a> <a href="/Litianzun.github.io/tags/%E5%B8%83%E5%B1%80/" style="font-size: 10px;">布局</a> <a href="/Litianzun.github.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" style="font-size: 20px;">性能优化</a> <a href="/Litianzun.github.io/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 10px;">游戏</a> <a href="/Litianzun.github.io/tags/%E9%83%A8%E7%BD%B2/" style="font-size: 10px;">部署</a> <a href="/Litianzun.github.io/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 10px;">音乐</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Litianzun.github.io/archives/2021/10/">十月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Litianzun.github.io/archives/2021/05/">五月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Litianzun.github.io/archives/2021/04/">四月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Litianzun.github.io/archives/2021/03/">三月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Litianzun.github.io/archives/2020/11/">十一月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Litianzun.github.io/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Litianzun.github.io/archives/2020/09/">九月 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/Litianzun.github.io/2021/10/15/docker%E3%81%AE%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80/">dockerの小试牛刀</a>
-          </li>
-        
-          <li>
-            <a href="/Litianzun.github.io/2021/05/31/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E3%80%81%E8%8A%82%E6%B5%81/">关于防抖、节流</a>
-          </li>
-        
-          <li>
-            <a href="/Litianzun.github.io/2021/04/15/%E9%9F%B3%E4%B9%90%E5%B0%8F%E9%A6%86/">音乐小馆</a>
-          </li>
-        
-          <li>
-            <a href="/Litianzun.github.io/2021/03/12/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B8%83%E5%B1%80/">前端常用布局</a>
-          </li>
-        
-          <li>
-            <a href="/Litianzun.github.io/2020/11/20/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%8D%95%E4%BD%8D%E4%BB%8B%E7%BB%8D/">前端常用单位介绍</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2022 Li Dong<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/Litianzun.github.io/" class="mobile-nav-link">Home</a>
-  
-    <a href="/Litianzun.github.io/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+</div>
+
+<script src="/hexo-blog/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/hexo-blog/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/hexo-blog/libs/materialize/materialize.min.js"></script>
+    <script src="/hexo-blog/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/hexo-blog/libs/aos/aos.js"></script>
+    <script src="/hexo-blog/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/hexo-blog/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/hexo-blog/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/hexo-blog/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/hexo-blog/libs/others/busuanzi.pure.mini.js"></script>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
 
+    
 
-  
-<link rel="stylesheet" href="/Litianzun.github.io/fancybox/jquery.fancybox.css">
+    
 
-  
-<script src="/Litianzun.github.io/fancybox/jquery.fancybox.pack.js"></script>
+    
 
+    
 
+    
+    <script src="/hexo-blog/libs/instantpage/instantpage.js" type="module"></script>
+    
 
-
-<script src="/Litianzun.github.io/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
+
 </html>

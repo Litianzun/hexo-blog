@@ -158,6 +158,20 @@
   </url>
   
   <url>
+    <loc>https://litianzun.github.io/hexo-blog/tags/ES6/</loc>
+    <lastmod>2022-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://litianzun.github.io/hexo-blog/tags/Set-Map/</loc>
+    <lastmod>2022-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://litianzun.github.io/hexo-blog/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2022-04-20</lastmod>
     <changefreq>daily</changefreq>
@@ -180,20 +194,6 @@
   
   <url>
     <loc>https://litianzun.github.io/hexo-blog/tags/%E5%8D%95%E4%BD%8D/</loc>
-    <lastmod>2022-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://litianzun.github.io/hexo-blog/tags/ES6/</loc>
-    <lastmod>2022-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://litianzun.github.io/hexo-blog/tags/Set-Map/</loc>
     <lastmod>2022-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
