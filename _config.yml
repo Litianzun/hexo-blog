@@ -119,7 +119,7 @@ search:
 deploy:
 - type: git
   repo: https://github.com/Litianzun/hexo-blog
-  branch: gh-pages
+  branch: master
   message: ''
 
 - type: baidu_url_submitter
