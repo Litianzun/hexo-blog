@@ -75,9 +75,6 @@ jobs:
 
       - name: Deploy hexo
         run: |
-          ##进入站点根目录
-          cd /usr/local/src/hexo/hanyubolg/
-
           ##删除git提交内容文件夹
           rm -rf .deploy_git/
 
