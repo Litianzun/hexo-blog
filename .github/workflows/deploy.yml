@@ -75,4 +75,6 @@ jobs:
 
       - name: Deploy hexo
         run: |
-          npm run deploy
+          hexo clean
+          hexo g
+          hexo d
