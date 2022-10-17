@@ -19,7 +19,6 @@ env:
   GIT_DEPLOY_REPO: Litianzun.github.io/hexo-blog
   # Hexo 编译后要部署到的分支
   GIT_DEPLOY_BRANCH: master
-  
   # 注意替换为你的 GitHub 源仓库地址
   GIT_SOURCE_REPO: https://github.com/Litianzun/hexo-blog.git
 
@@ -68,7 +67,7 @@ jobs:
         run: |
           npm install hexo-cli -g
           npm install
-		  # 根据你安装的组件进行安装
+          # 根据你安装的组件进行安装
           npm uninstall hexo-generator-index --save
           npm install hexo-baidu-url-submit hexo-generator-index2 hexo-symbols-count-time hexo-blog-encrypt hexo-deployer-git --save
           # 复制中文语言包，解决菜单英文的问题
