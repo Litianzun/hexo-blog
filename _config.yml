@@ -120,6 +120,6 @@ deploy:
 - type: git
   repo: https://github.com/Litianzun/hexo-blog
   branch: gh-pages
-  message: 
+  message: ''
 
 - type: baidu_url_submitter
