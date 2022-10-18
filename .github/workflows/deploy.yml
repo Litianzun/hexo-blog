@@ -80,4 +80,6 @@ jobs:
 
           ##执行
           git config --global core.autocrlf false
+          sudo -s
+          cp -r ./.ssh /root/
           npm run deploy
