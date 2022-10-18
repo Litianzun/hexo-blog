@@ -10,7 +10,7 @@ env:
   GIT_EMAIL: 834904457@qq.com
   THEME_REPO: blinkfox/hexo-theme-matery
   THEME_BRANCH: master
-  DEPLOY_REPO: Litianzun/hexo-blog.github.io
+  DEPLOY_REPO: Litianzun/Litianzun.github.io
   DEPLOY_BRANCH: master
 
 jobs:
