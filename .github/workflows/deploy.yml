@@ -77,5 +77,5 @@ jobs:
         run: |
           ##删除git提交内容文件夹
           rm -rf .deploy_git/
-          ssh-add ~/.ssh/id_rsa
+          # ssh-add ~/.ssh/id_rsa
           npm run deploy
