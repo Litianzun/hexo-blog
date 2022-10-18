@@ -118,7 +118,7 @@ search:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
 - type: git
-  repo: git@github.com:Litianzun/hexo-blog.github.io.git
+  repo: https://github.com/Litianzun/hexo-blog.github.io.git
   branch: master
   message: ''
 
