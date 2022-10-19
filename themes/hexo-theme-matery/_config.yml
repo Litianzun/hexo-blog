@@ -227,6 +227,11 @@ myProjects:
         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
         url: https://github.com/Litianzun/egg-demo
         desc: react-native + egg + mysql搭建的全栈项目。
+    Lister-component:
+        icon: fas fa-laptop-code
+        iconBackground: 'linear-gradient(to bottom right, #4a77c0 0%, #74a1e9 100%);'
+        url: https://github.com/Litianzun/Lister-component
+        desc: 访ant-design的一套自定义组件库
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -236,20 +241,20 @@ mySkills:
   data:
     React:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 85%
+      percent: 90%
     JavaScript:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
       percent: 80%
-    HTML5:
+    HTML5/CSS3:
       background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
       percent: 80%
-    CSS3:
+    Typescript:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
-      percent: 70%
+      percent: 75%
     webpack:
       background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
       percent: 60%
-    程序设计:
+    其他:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
       percent: 75%
 
